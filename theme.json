@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "settings": {
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "styles": {
+      "elements": {
+        "button": {
+          ":hover": {
+            "typography": {
+              "textDecoration": "none"
+            },
+            "border": {
+              "bottom": {
+                "width": "2px",
+                "color": "#111",
+                "style": "dotted"
+              }
+            }
+          },
+          ":focus": {
+            "outline": {
+              "offset": "3px",
+              "width": "3px",
+              "style": "solid",
+              "color": "blue"
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "blockGap": true,
+      "customSpacingSize": true,
+      "margin": true,
+      "padding": true,
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      },
+      "spacingSizes": [],
+      "units": ["px", "em", "rem", "vh", "vw", "%"]
+    },
+    "color": {
+      "background": true,
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": true,
+      "defaultDuotone": true,
+      "defaultGradients": true,
+      "defaultPalette": true,
+      "duotone": [],
+      "gradients": [],
+      "link": true,
+      "palette": [
+        {
+          "slug": "background",
+          "color": "#121212",
+          "name": "Background"
+        },
+        {
+          "slug": "primary",
+          "color": "#f8f6e2",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#666755",
+          "name": "Secondary"
+        },
+        {
+          "slug": "accent",
+          "color": "#db6015",
+          "name": "Accent"
+        }
+      ],
+      "text": true
+    },
+    "typography": {
+      "fluid": true,
+      "lineHeight": true,
+      "fontSizes": [
+        {
+          "name": "Small",
+          "size": "1rem",
+          "slug": "small"
+        },
+        {
+          "name": "Medium",
+          "size": "1.5rem",
+          "slug": "medium"
+        },
+        {
+          "name": "2-Medium",
+          "size": "1.875rem",
+          "slug": "2-medium"
+        },
+        {
+          "name": "Large",
+          "size": "3.5rem",
+          "slug": "large"
+        },
+        {
+          "name": "Extra Large",
+          "slug": "xxl-large",
+          "size": "7.5rem"
+        }
+      ]
+    }
+  }
+}
