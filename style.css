@@ -26,7 +26,7 @@
   min-height: 80px;
   position: absolute;
   top: calc(50% - 40px);
-  right: -40px;
+  right: 40px;
   transform: rotate(45deg);
   background: #fff;
   z-index: 2;
@@ -138,6 +138,9 @@ body {
 }
 .fencing-devider {
   width: 100%;
+}
+.fencing-devider:first-child {
+  margin-top: -1px;
 }
 .fencing-devider.mirror {
   transform: rotate(180deg);

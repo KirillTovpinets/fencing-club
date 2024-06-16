@@ -1,4 +1,6 @@
+@use 'sass:math';
 @import './variables.scss';
+$size: 80px;
 .fencing {
   &-page {
     &-header {
@@ -30,14 +32,13 @@
             &:first-child {
               .wp-block-cover {
                 &:after {
-                  $size: 80px;
                   content: '';
                   border-bottom-left-radius: 16px;
                   width: $size;
                   min-height: $size;
                   position: absolute;
-                  top: calc(50% - $size / 2);
-                  right: -($size / 2);
+                  top: calc(50% - math.div($size, 2));
+                  right: math.div($size, 2);
                   transform: rotate(45deg);
                   background: #fff;
                   z-index: 2;
@@ -54,7 +55,7 @@
                   min-height: $size;
                   position: absolute;
                   top: calc(50% - $size / 2);
-                  left: -($size / 2);
+                  left: -(math.div($size, 2));
                   transform: rotate(45deg);
                   background: #fff;
                   z-index: 2;
