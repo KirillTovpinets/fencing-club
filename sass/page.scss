@@ -38,7 +38,7 @@ $size: 80px;
                   min-height: $size;
                   position: absolute;
                   top: calc(50% - math.div($size, 2));
-                  right: math.div($size, 2);
+                  right: -(math.div($size, 2));
                   transform: rotate(45deg);
                   background: #fff;
                   z-index: 2;

@@ -93,12 +93,12 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="https://place-hold.it/560x850" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
         <div class="col-md-6">
           <h3 class="text-capitalize fencing-section-title fw-bold">Fencing <span class="accent">Programs</span> <br> for all ages and abilities</h3>
           <p class="fencing-section-description">
-            Our focus is on dynamic functional training and proper boxing technique.
+            From kids' classes to adult training sessions, we have programs tailored for every age group and skill level.
           </p>
           <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About Club</a>
         </div>
