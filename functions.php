@@ -12,4 +12,11 @@
       'strategy'  => 'defer',
     )
   );
+
+  add_settings_field( 'myprefix_setting-id',
+	'This is the setting title',
+ 	'myprefix_setting_callback_function',
+	'general',
+	'myprefix_settings-section-name',
+	array( 'label_for' => 'myprefix_setting-id' ) );
 ?>
