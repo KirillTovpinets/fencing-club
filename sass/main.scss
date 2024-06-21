@@ -335,7 +335,7 @@ footer {
   .col-md-3 {
     --bs-gutter-x: 4rem;
   }
-  ul {
+  ul:not(.wp-block-post-template) {
     list-style: none;
     padding: 0;
     li {
