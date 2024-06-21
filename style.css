@@ -11,15 +11,10 @@
 .fencing-page-content h2.wp-block-heading {
   font-size: 2.5rem;
 }
-@media screen and (max-width: 781px) {
-  .fencing-page-content .fencing-trainer-excerpt {
-    padding: 20px 50px 50px;
-  }
-}
 .fencing-page-content .wp-block-image.negative-margin img {
   margin-top: -147px;
 }
-.fencing-page-content ul li {
+.fencing-page-content ul:not(.wp-block-post-template) li {
   font-weight: bold;
   list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" stroke-width="3px" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/></svg>');
   list-style-position: inside;
@@ -27,6 +22,11 @@
 @media screen and (max-width: 994px) {
   .fencing-page-content .wp-block-columns.coaching-section {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 781px) {
+  .fencing-page-content .wp-block-columns .fencing-trainer-excerpt {
+    padding: 20px 50px 50px;
   }
 }
 .fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:first-child .wp-block-cover, .fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:last-child .wp-block-cover {
@@ -382,11 +382,11 @@ footer h4 {
 footer .col-md-3 {
   --bs-gutter-x: 4rem;
 }
-footer ul:not(.wp-block-post-template) {
+footer ul {
   list-style: none;
   padding: 0;
 }
-footer ul:not(.wp-block-post-template) li a {
+footer ul li a {
   color: #f8f6e2;
   text-decoration: none;
 }
