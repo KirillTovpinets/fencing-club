@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+  html {
+    .fencing {
+      &-programs-title {
+        font-size: 3.5rem !important;
+      }
+      &-section {
+        &-testimonials {
+          .w-50 {
+            width: 100% !important;
+          }
+        }
+        .schedule-contact-section {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .fencing-programs-title {
+    font-size: 5.5rem !important;
+  }
+}

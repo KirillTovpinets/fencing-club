@@ -11,6 +11,9 @@
 .fencing-page-content h2.wp-block-heading {
   font-size: 2.5rem;
 }
+.fencing-page-content .wp-block-image.negative-margin img {
+  margin-top: -147px;
+}
 .fencing-page-content ul li {
   font-weight: bold;
   list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" stroke-width="3px" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/></svg>');
@@ -44,6 +47,22 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 576px) {
+  html .fencing-programs-title {
+    font-size: 3.5rem !important;
+  }
+  html .fencing-section-testimonials .w-50 {
+    width: 100% !important;
+  }
+  html .fencing-section .schedule-contact-section {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fencing-programs-title {
+    font-size: 5.5rem !important;
+  }
+}
 body {
   --heading-font: Prompt, sans-serif;
   --bs-body-font-family: Syne, serif;
@@ -73,6 +92,14 @@ body {
   height: 500px;
 }
 
+a {
+  text-decoration: none !important;
+  color: #f8f6e2;
+}
+a:hover {
+  color: #db6015;
+}
+
 .fencing-border {
   --bs-border-color: #666755;
 }
@@ -99,6 +126,12 @@ body {
 .fencing-svg polygon {
   fill: #666755 !important;
 }
+@media screen and (max-width: 480px) {
+  .fencing-header {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+}
 .fencing-page-header, .fencing-header {
   padding: 150px 0px;
   background-repeat: no-repeat;
@@ -115,12 +148,6 @@ body {
   background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   z-index: 1;
 }
-@media screen and (max-width: 480px) {
-  .fencing-page-header, .fencing-header {
-    padding-top: 150px;
-    padding-bottom: 80px;
-  }
-}
 .fencing-page-header-title, .fencing-header-title {
   position: relative;
   z-index: 2;
@@ -133,7 +160,12 @@ body {
 }
 @media screen and (max-width: 998px) {
   .fencing-page-header-title, .fencing-header-title {
-    font-size: 3rem;
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fencing-page-header-title, .fencing-header-title {
+    font-size: 4rem;
   }
 }
 .fencing-devider {
@@ -172,13 +204,6 @@ body {
 }
 .fencing-section {
   position: relative;
-}
-.fencing-section a {
-  text-decoration: none;
-  color: #f8f6e2;
-}
-.fencing-section a:hover {
-  color: #db6015;
 }
 .fencing-section .contact-form textarea.form-control {
   height: 200px;
@@ -229,12 +254,10 @@ body {
   z-index: 1;
 }
 .fencing-section-parallax-background {
-  background: url("images/backgrounds/testimonials.png");
+  background: url("images/backgrounds/parallax.png");
   background-size: cover;
   background-position: center;
-  padding-top: 200px;
   padding-bottom: 100px;
-  margin-top: -115px;
   z-index: -1;
 }
 .fencing-section-parallax-background::after {
@@ -258,11 +281,6 @@ body {
 .fencing-section-title {
   font-size: 3.5em;
   margin-bottom: 1.5rem;
-}
-@media screen and (max-width: 998px) {
-  .fencing-section-title {
-    font-size: 1.7rem;
-  }
 }
 .fencing-section-description {
   font-size: 1.375rem;
@@ -322,6 +340,11 @@ body {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+@media screen and (max-width: 994px) {
+  .fencing-service .fs-1 {
+    font-size: 1.375rem !important;
+  }
+}
 .fencing-service:hover {
   background-color: #666755;
 }
@@ -336,11 +359,6 @@ body {
 }
 .fencing-programs-title {
   font-size: 7.5em;
-}
-@media screen and (max-width: 998px) {
-  .fencing-programs-title {
-    font-size: 1.75rem;
-  }
 }
 
 footer {
@@ -359,6 +377,17 @@ footer ul {
 footer ul li a {
   color: #f8f6e2;
   text-decoration: none;
+}
+footer .border-end:first-child, footer .border-end:nth-child(2) {
+  margin-bottom: 3rem;
+}
+footer .border-end:nth-child(2) {
+  border-right: none !important;
+}
+@media screen and (max-width: 769px) {
+  footer .border-end {
+    border-right: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

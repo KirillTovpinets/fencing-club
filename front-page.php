@@ -111,12 +111,12 @@
         <div class="col-md-6 mb-md-0 mb-5">
           <h3 class="text-capitalize fencing-section-title fw-bold">Contact and <br>non-contact <br><span class="accent">Training</span> </h3>
           <p class="fencing-section-description">
-            Our focus is on dynamic functional training and proper boxing technique.
+            Our focus is on dynamic functional training and proper fencing technique.
           </p>
           <button class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</button>
         </div>
         <div class="col-md-6">
-          <img src="https://place-hold.it/560x850" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
       </div>
     </div>
@@ -130,9 +130,9 @@
 
     <div class="container">
       <div class="py-5 row">
-        <div class="col-md-3 fencing-program mb-4 mb-md-0">
+        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
           <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="https://place-hold.it/300x400" alt="" class="height-auto d-block w-100">
+            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/begginer.png" alt="" class="height-auto d-block w-100">
             <div class="program-description title">
               <h4 class="text-uppercase fw-bold text-center">Begginner <br>classes</h4>
               <span class="d-flex read-more gap-2">
@@ -142,9 +142,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 fencing-program mb-4 mb-md-0">
+        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
           <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="https://place-hold.it/300x400" alt="" class="height-auto d-block w-100">
+            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/intermediate.png" alt="" class="height-auto d-block w-100">
             <div class="program-description title">
               <h4 class="text-uppercase fw-bold">Intermediate</h4>
               <span class="d-flex read-more gap-2">
@@ -154,9 +154,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 fencing-program mb-4 mb-md-0">
+        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
           <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="https://place-hold.it/300x400" alt="" class="height-auto d-block w-100">
+            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/competitive.png" alt="" class="height-auto d-block w-100">
           <div class="program-description title">
             <h4 class="text-uppercase fw-bold">Competitive</h4>
             <span class="d-flex read-more gap-2">
@@ -166,9 +166,9 @@
           </div>
           </div>
         </div>
-        <div class="col-md-3 fencing-program mb-4 mb-md-0">
+        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
           <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="https://place-hold.it/300x400" alt="" class="height-auto d-block w-100">
+            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/elite.png" alt="" class="height-auto d-block w-100">
             <div class="program-description title">
               <h4 class="text-uppercase fw-bold text-center">Elite <br> classes</h4>
               <span class="d-flex read-more gap-2">
@@ -184,9 +184,9 @@
       </div>
     </div>
   </section>
-  <section class="fencing-section">
+  <section class="fencing-section fencing-section-parallax-background">
     <img class="fencing-devider mirror" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
-    <div class="fencing-section-parallax-background">
+    <div class="pt-5">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
         <div class="fs-2 text-center w-50">
           <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid nostrum esse repudiandae error non dolor, reiciendis sed in veritatis praesentium, quos, nisi consequuntur vel minus necessitatibus voluptate earum aut?"</p>
@@ -199,7 +199,7 @@
   <section class="fencing-section schedule-contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-3">
           <h4 class="fencing-section-title fw-bold fs-1">Schedule</h4>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -403,14 +403,14 @@
           </form>
 
           <div class="row fencing-contact-info">
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="d-flex gap-2 mb-3">
                 <i class="bi bi-geo-alt text-secondary"></i>
                 <span class="text-uppercase">Location</span>
               </div>
-              <p>Chicago 60 East <br> 65th Street, <br>IL 60223</p>
+              <p>28457 Ballard Dr, <br> unit c1, <br> Lake Forest, IL 60045</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="d-flex gap-2 mb-3">
                 <i class="bi bi-clock text-secondary"></i>
                 <span class="text-uppercase">Hours</span>
@@ -419,7 +419,7 @@
               <p>Thursday: 8am - 9pm</p>
               <p>Sunday: 8am - 5pm</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
               <div class="d-flex gap-2 mb-3">
                 <i class="bi bi-globe text-secondary"></i>
                 <span class="text-uppercase">Social</span>

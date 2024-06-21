@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row border p-5 rounded rounded-5 fencing-border">
-      <div class="col-md-3 border-end">
+      <div class="col-lg-3 col-md-6 border-end">
         <div class="d-flex flex-column align-items-center justify-content-center">
           <img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white.png" alt="logo">
         <p class="text-center">
@@ -9,7 +9,7 @@
         </p>
         </div>
       </div>
-      <div class="col-md-3 border-end">
+      <div class="col-lg-3 col-md-6 border-end">
         <h4 class="text-uppercase fw-bold mb-4">Newsletter</h4>
 
         <div class="input-group">
@@ -17,7 +17,7 @@
           <button class="input-text-addon btn fencing-btn">Subscribe</button>
         </div>
       </div>
-      <div class="col-md-3 border-end">
+      <div class="col-lg-3 col-md-6 border-end">
         <h4 class="text-uppercase fw-bold mb-4">Club</h4>
         <ul>
           <li><a href="#">About us</a></li>
@@ -25,12 +25,12 @@
           <li><a href="#">Programs</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-6">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
-          60 East 65th Street, Minneapolis <br>
-          Tel. 1-800-1-900 <br>
-          Email: info@campo.com
+          28457 Ballard Dr, unit c1, Lake Forest, IL 60045 <br>
+          Tel. <a href="tel:+13127188617">+1 (312) 718-8617</a> <br>
+          Email: <a href="mailto:eminencefa@gmail.com">eminencefa@gmail.com</a>
         </p>
         <div class="d-flex gap-3 align-items-center fs-2">
           <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-youtube"></i>
