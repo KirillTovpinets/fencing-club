@@ -19,9 +19,13 @@
 
     <div class="d-flex justify-content-end align-items-center" id="navbarSupportedContent">
       <div class="d-flex align-items-center gap-3 me-3">
-      <span class="dashicons dashicons-facebook"></span>
-      <span class="dashicons dashicons-instagram"></span>
-      <span class="dashicons dashicons-twitter"></span>
+        <a href="<?php echo get_option('facebook-group-link'); ?>">
+          <span class="dashicons dashicons-facebook"></span>
+        </a>
+        <a href="<?php echo get_option('instagram-group-link'); ?>">
+          <span class="dashicons dashicons-instagram"></span>
+        </a>
+        <span class="dashicons dashicons-twitter"></span>
       </div>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="bi bi-list fs-1"></i>

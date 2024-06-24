@@ -13,30 +13,50 @@
     )
   );
 
-  add_action( 'admin_menu', 'add_option_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_instagram_link_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_facebook_link_field_to_general_admin_page' );
 
-  function add_option_field_to_general_admin_page() {
+  function add_facebook_link_field_to_general_admin_page() {
+    $facebook_link = 'facebook-group-link';
+    register_setting( 'general', $facebook_link );
 
-	$option_name = 'my_option';
+    // add a field
+    add_settings_field(
+      'facebook_setting-id',
+      'Facebook Link',
+      'instagram_setting_callback_function',
+      'general',
+      'default',
+      [
+        'id'          => 'facebook_setting-id',
+        'option_name' => 'facebook-group-link'
+      ]
+    );
+  }
 
-	// register the option
-	register_setting( 'general', $option_name );
+  function add_instagram_link_field_to_general_admin_page() {
 
-	// add a field
-	add_settings_field(
-		'myprefix_setting-id',
-		'Option Name',
-		'myprefix_setting_callback_function',
-		'general',
-		'default',
-		[
-			'id'          => 'myprefix_setting-id',
-			'option_name' => 'my_option'
-		]
-	);
-}
+    $instagram_link = 'instagram-group-link';
 
-function myprefix_setting_callback_function( $val ) {
+
+    // register the option
+    register_setting( 'general', $instagram_link );
+
+    // add a field
+    add_settings_field(
+      'intagram_setting-id',
+      'Instagram Link',
+      'instagram_setting_callback_function',
+      'general',
+      'default',
+      [
+        'id'          => 'intagram_setting-id',
+        'option_name' => 'instagram-group-link'
+      ]
+    );
+  }
+
+function instagram_setting_callback_function( $val ) {
 
 	$id = $val['id'];
 	$option_name = $val['option_name'];
@@ -49,4 +69,3 @@ function myprefix_setting_callback_function( $val ) {
 	/>
 	<?php
 }
-?>
