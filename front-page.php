@@ -358,7 +358,9 @@
         <div class="col-md-6">
           <h4 class="fencing-section-title fw-bold fs-1">Contact</h4>
 
-          <form class="contact-form">
+          <?php echo do_shortcode('[contact-form-7 id="3adedfe" title="Contact form" html_class="contact-form"]'); ?>
+
+          <!-- <form class="contact-form">
             <div class="mb-3">
               <div class="row mb-3">
                 <div class="col">
@@ -400,7 +402,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-end mt-4"><button type="submit" class="btn fencing-btn btn-xlg pull-right">Submit</button></div>
-          </form>
+          </form> -->
 
           <div class="row fencing-contact-info">
             <div class="col-4">

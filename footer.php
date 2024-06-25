@@ -28,12 +28,20 @@
       <div class="col-lg-3 col-md-6">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
-          28457 Ballard Dr, unit c1, Lake Forest, IL 60045 <br>
-          Tel. <a href="tel:+13127188617">+1 (312) 718-8617</a> <br>
-          Email: <a href="mailto:eminencefa@gmail.com">eminencefa@gmail.com</a>
+          <!-- 28457 Ballard Dr, unit c1, Lake Forest, IL 60045  -->
+          <?php echo get_option('club-address'); ?><br>
+          <!-- +13127188617 -->
+          Tel. <a href="tel:+13127188617"><?php echo get_option('club-phone'); ?></a> <br>
+          <!-- eminencefa@gmail.com -->
+          Email: <a href="mailto:eminencefa@gmail.com"><?php echo get_option('club-email'); ?></a>
         </p>
         <div class="d-flex gap-3 align-items-center fs-2">
-          <i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-youtube"></i>
+          <a href="<?php echo get_option('facebook-group-link'); ?>">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="<?php echo get_option('instagram-group-link'); ?>">
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
       </div>
       <hr class="mt-5">

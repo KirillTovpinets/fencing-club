@@ -15,48 +15,56 @@
 
   add_action( 'admin_menu', 'add_instagram_link_field_to_general_admin_page' );
   add_action( 'admin_menu', 'add_facebook_link_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_address_link_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_phone_link_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_email_link_field_to_general_admin_page' );
+
+  function add_address_link_field_to_general_admin_page(){
+    $option = 'club-address';
+    register_option_function($option, 'Club Address');
+  }
+  function add_phone_link_field_to_general_admin_page(){
+    $option = 'club-phone';
+    register_option_function($option, 'Club Phone');
+  }
+  function add_email_link_field_to_general_admin_page(){
+    $option = 'club-email';
+    register_option_function($option, 'Club Email');
+  }
 
   function add_facebook_link_field_to_general_admin_page() {
     $facebook_link = 'facebook-group-link';
-    register_setting( 'general', $facebook_link );
 
-    // add a field
-    add_settings_field(
-      'facebook_setting-id',
-      'Facebook Link',
-      'instagram_setting_callback_function',
-      'general',
-      'default',
-      [
-        'id'          => 'facebook_setting-id',
-        'option_name' => 'facebook-group-link'
-      ]
-    );
+    register_option_function($facebook_link, 'Facebook Link');
   }
 
   function add_instagram_link_field_to_general_admin_page() {
 
     $instagram_link = 'instagram-group-link';
 
+    register_option_function($instagram_link, 'Intagram Link');
+  }
 
+  function register_option_function($option_name, $label) {
     // register the option
-    register_setting( 'general', $instagram_link );
+    register_setting( 'general', $option_name );
 
+    $setting_id = $option_name . '_setting-id';
     // add a field
     add_settings_field(
-      'intagram_setting-id',
-      'Instagram Link',
-      'instagram_setting_callback_function',
+      $setting_id,
+      $label,
+      'setting_callback_function',
       'general',
       'default',
       [
-        'id'          => 'intagram_setting-id',
-        'option_name' => 'instagram-group-link'
+        'id'          => $setting_id,
+        'option_name' => $option_name
       ]
     );
   }
 
-function instagram_setting_callback_function( $val ) {
+function setting_callback_function( $val ) {
 
 	$id = $val['id'];
 	$option_name = $val['option_name'];
