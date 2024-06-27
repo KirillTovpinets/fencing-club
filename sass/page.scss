@@ -10,6 +10,42 @@ $size: 80px;
       color: $body-bg-color;
       padding: 100px 0px 0px;
 
+      .fencing-contact-info {
+        position: absolute;
+        background: #fff;
+        width: 600px;
+        z-index: 2;
+        padding: 60px 40px;
+        border-radius: 16px;
+        top: calc(50% - 175px);
+        left: 300px;
+
+        p {
+          font-size: 1rem;
+        }
+
+        .header {
+          font-size: 3.5em;
+        }
+
+        .description {
+          font-size: 1.375rem;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          transform: rotate(45deg);
+          top: calc(50% - 25px);
+          right: -25px;
+          z-index: -1;
+          background: #fff;
+        }
+      }
+
       #google-map {
         height: 900px;
         @media screen and (max-width: 991px) {
