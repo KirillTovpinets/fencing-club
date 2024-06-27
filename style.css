@@ -191,12 +191,17 @@ a:hover {
 }
 .fencing-devider {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .fencing-devider:first-child {
   margin-top: -1px;
 }
 .fencing-devider.mirror {
   transform: rotate(180deg);
+  bottom: -146px;
 }
 .fencing-btn, .fencing-btn-outline {
   --bs-btn-color: #fff;

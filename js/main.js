@@ -118,7 +118,7 @@ window.addEventListener('load', () => {
       'src',
       '/wp-content/themes/fencing/images/section-devider.png'
     )
-    image.classList.add('fencing-devider mirror')
+    image.classList.add('fencing-devider', 'mirror')
     e.append(image)
   })
 })

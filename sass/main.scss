@@ -112,6 +112,10 @@ a {
   }
   &-devider {
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     &:first-child {
       margin-top: -1px;
@@ -119,6 +123,7 @@ a {
 
     &.mirror {
       transform: rotate(180deg);
+      bottom: -146px;
     }
   }
 
