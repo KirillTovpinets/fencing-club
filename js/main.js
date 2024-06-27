@@ -118,6 +118,6 @@ window.addEventListener('load', () => {
       'src',
       '/wp-content/themes/fencing/images/section-devider.png'
     )
-    e.append()
+    e.append(image)
   })
 })
