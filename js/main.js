@@ -108,17 +108,33 @@ async function initMap() {
 initMap()
 
 window.addEventListener('load', () => {
-  const sections = document.querySelectorAll(
+  const sectionsWithBottomDevider = document.querySelectorAll(
     '.fencing-section.with-bottom-devider'
   )
 
-  sections.forEach((e) => {
+  const sectionsWithTopDevider = document.querySelectorAll(
+    '.fencing-section.with-top-devider'
+  )
+
+  sectionsWithBottomDevider.forEach((e) => {
     const image = document.createElement('img')
     image.setAttribute(
       'src',
       '/wp-content/themes/fencing/images/section-devider.png'
     )
-    image.classList.add('fencing-devider', 'mirror')
+    image.classList.add('fencing-devider')
+    image.classList.add('mirror')
     e.append(image)
+  })
+
+  sectionsWithTopDevider.forEach((e) => {
+    const image = document.createElement('img')
+    image.setAttribute(
+      'src',
+      '/wp-content/themes/fencing/images/section-devider.png'
+    )
+    image.classList.add('fencing-devider')
+    image.style.top = '-145px'
+    e.prepend(image)
   })
 })

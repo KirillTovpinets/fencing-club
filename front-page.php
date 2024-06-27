@@ -105,7 +105,7 @@
       </div>
     </div>
   </section>
-  <section class="fencing-section my-md-0 mt-5">
+  <section class="fencing-section my-md-0 mt-5 padding-bottom">
     <div class="container">
       <div class="row align-items-center flex-md-row flex-column-reverse">
         <div class="col-md-6 mb-md-0 mb-5">
@@ -120,9 +120,8 @@
         </div>
       </div>
     </div>
-    <img class="fencing-devider mt-5" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
   </section>
-  <section class="fencing-section py-5 bg-primary">
+  <section class="fencing-section py-5 bg-primary with-bottom-devider with-top-devider">
     <span class="fs-2 d-block text-center fw-bold text-white">FUN. FITNESS. FENCING</span>
     <h2 class="text-center fw-bold fencing-programs-title text-white">
       PROGRAMS
@@ -183,9 +182,9 @@
         <button class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</button>
       </div>
     </div>
+
   </section>
   <section class="fencing-section fencing-section-parallax-background">
-    <img class="fencing-devider mirror" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
     <div class="pt-5">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
         <div class="fs-2 text-center w-50">

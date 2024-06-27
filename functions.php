@@ -11,7 +11,9 @@
     array(
       'strategy'  => 'defer',
     )
-  );
+    );
+
+  wp_enqueue_style('reesha-font', get_template_directory_uri() . '/fonts/reesha/MyWebfontsKit.css', array(), false, 'all');
 
   add_action( 'admin_menu', 'add_instagram_link_field_to_general_admin_page' );
   add_action( 'admin_menu', 'add_facebook_link_field_to_general_admin_page' );

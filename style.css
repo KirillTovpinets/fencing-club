@@ -6,8 +6,7 @@
 }
 .fencing-page-content {
   color: #121212;
-  padding: 100px 0px;
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
 }
 .fencing-page-content #google-map {
   height: 900px;
@@ -85,7 +84,8 @@
   }
 }
 body {
-  --heading-font: "Prompt", sans-serif;
+  --heading-font: Roboto, sans-serif;
+  --section-title-font: Reesha;
   --bs-body-font-family: Roboto, sans-serif;
   --bs-primary: #f8f6e2;
   --bs-primary-rgb: 217, 217, 204;
@@ -172,6 +172,7 @@ a:hover {
 .fencing-page-header-title, .fencing-header-title {
   position: relative;
   z-index: 2;
+  font-family: var(--section-title-font);
   font-size: 6rem;
   color: var(--bs-primary);
 }
@@ -232,6 +233,12 @@ a:hover {
 .fencing-section {
   position: relative;
 }
+.fencing-section.padding-bottom {
+  padding-bottom: 200px;
+}
+.fencing-section.with-bottom-devider {
+  padding-bottom: 180px;
+}
 .fencing-section .contact-form textarea.form-control {
   height: 200px;
 }
@@ -285,6 +292,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   padding-bottom: 100px;
+  padding-top: 180px;
   z-index: -1;
 }
 .fencing-section-parallax-background::after {
