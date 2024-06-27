@@ -106,3 +106,18 @@ async function initMap() {
 }
 
 initMap()
+
+window.addEventListener('load', () => {
+  const sections = document.querySelectorAll(
+    '.fencing-section.with-bottom-devider'
+  )
+
+  sections.forEach((e) => {
+    const image = document.createElement('img')
+    image.setAttribute(
+      'src',
+      '/wp-content/themes/fencing/images/section-devider.png'
+    )
+    e.append()
+  })
+})
