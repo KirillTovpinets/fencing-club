@@ -121,7 +121,10 @@
       </div>
     </div>
   </section>
-  <section class="fencing-section py-5 bg-primary with-bottom-devider with-top-devider">
+  <section>
+    <img src="/eminence/wp-content/themes/fencing/images/section-devider.png" class="fencing-devider">
+  </section>
+  <section class="fencing-section py-5 bg-primary">
     <span class="fs-2 d-block text-center fw-bold text-white">FUN. FITNESS. FENCING</span>
     <h2 class="text-center fw-bold fencing-programs-title text-white">
       PROGRAMS
@@ -184,6 +187,9 @@
     </div>
 
   </section>
+  <section>
+    <img src="/eminence/wp-content/themes/fencing/images/section-devider.png" class="fencing-devider mirror">
+  </section>
   <section class="fencing-section fencing-section-parallax-background">
     <div class="pt-5">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
@@ -201,7 +207,39 @@
         <div class="col-md-6 mb-3">
           <h4 class="fencing-section-title fw-bold fs-1">Schedule</h4>
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <?php $result = getWeekDays(); ?>
+            <?php if ( $result->have_posts()) : ?>
+              <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo get_the_ID(); ?>" aria-expanded="false" aria-controls="collapse<?php echo get_the_ID(); ?>">
+                      <?php the_title(); ?>
+                    </button>
+                  </h2>
+                  <div id="collapse<?php echo get_the_ID(); ?>" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <?php $events = getAllEvents(get_the_ID()); ?>
+                      <?php if ( !empty($events) ): ?>
+                        <?php foreach($events as $slot):  ?>
+                          <div class="schedule-item">
+                              <span class="fw-bold fs-3">
+                                <?php echo $slot->event_start . '-' . $slot->event_end; ?>
+                              </span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">
+                                <?php echo $slot->program; ?>
+                              </span>
+                          </div>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                          <p>No events found</p>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            <?php else: ?>
+              <p>No events found</p>
+            <?php endif; wp_reset_postdata(); ?>
+             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMonday" aria-expanded="true" aria-controls="collapseMonday">
                   Monday
@@ -226,7 +264,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <!--<div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTuesday" aria-expanded="false" aria-controls="collapseTuesday">
                   Tuesday
@@ -351,57 +389,13 @@
                   </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
           </div>
         </div>
         <div class="col-md-6">
           <h4 class="fencing-section-title fw-bold fs-1">Contact</h4>
 
           <?php echo do_shortcode('[contact-form-7 id="3adedfe" title="Contact form" html_class="contact-form"]'); ?>
-
-          <!-- <form class="contact-form">
-            <div class="mb-3">
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="first-name" placeholder="First name">
-                    <label for="first-name">First name</label>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-floating">
-                    <input type="text" id="last-name" class="form-control" placeholder="Last name">
-                    <label for="last-name" name="last-name">Last name</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="form-floating">
-                    <input type="text" id="phone-number" class="form-control" placeholder="Phone number">
-                    <label for="phone-number" name="phone-number">Phone number</label>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-floating">
-                    <input type="text" id="email" class="form-control" placeholder="Email">
-                    <label for="email" name="email">Email</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="form-floating">
-                    <textarea class="form-control" rows="5" placeholder="Message" id="message"></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-end mt-4"><button type="submit" class="btn fencing-btn btn-xlg pull-right">Submit</button></div>
-          </form> -->
 
           <div class="row fencing-contact-info">
             <div class="col-4">
