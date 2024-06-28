@@ -10,6 +10,10 @@ $size: 80px;
       color: $body-bg-color;
       padding: 100px 0px 0px;
 
+      a {
+        color: var(--bs-body);
+      }
+
       .fencing-contact-info {
         position: absolute;
         background: #fff;
@@ -17,7 +21,7 @@ $size: 80px;
         z-index: 2;
         padding: 60px 40px;
         border-radius: 16px;
-        top: calc(50% - 175px);
+        top: calc(50% - 260px);
         left: 300px;
 
         p {
