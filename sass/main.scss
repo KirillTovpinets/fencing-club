@@ -11,6 +11,10 @@ body {
   --bs-primary: #{$primary-color};
   --bs-primary-rgb: 217, 217, 204;
   --bs-body-color: #{$primary-color};
+  .nav-pills {
+    --bs-nav-pills-link-active-bg: #{$accent-color};
+    --bs-nav-link-hover-color: #{$accent-color};
+  }
   background: #000;
 }
 .navbar {

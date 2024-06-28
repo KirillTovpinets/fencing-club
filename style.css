@@ -126,6 +126,10 @@ body {
   --bs-body-color: #f8f6e2;
   background: #000;
 }
+body .nav-pills {
+  --bs-nav-pills-link-active-bg: #db6015;
+  --bs-nav-link-hover-color: #db6015;
+}
 
 .navbar {
   --bs-navbar-color: #f8f6e2;

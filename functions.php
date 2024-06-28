@@ -86,14 +86,15 @@ function getAllEvents($dayId){
   $timeFormat = '%h:%i %p';
   $query = $wpdb->get_results("SELECT TIME_FORMAT(wp_mp_timetable_data.event_start, '" . $timeFormat . "') as event_start,
                                       TIME_FORMAT(wp_mp_timetable_data.event_end, '" . $timeFormat ."') as event_end,
+                                      wp_mp_timetable_data.description,
                                        mt_event.program FROM wp_mp_timetable_data 
                                       INNER JOIN (SELECT ID FROM wp_posts 
                                         WHERE wp_posts.post_type = 'mp-column' 
-                                          AND wp_posts.ID = " . $dayId . ") AS mt_columns
+                                          AND wp_posts.ID = " . $dayId . " AND post_status = 'publish') AS mt_columns
                                        ON wp_mp_timetable_data.column_id = mt_columns.ID
                                       INNER JOIN (SELECT ID, post_title as program FROM wp_posts 
-                                        WHERE wp_posts.post_type = 'mp-event') AS mt_event
-                                       ON wp_mp_timetable_data.event_id = mt_event.ID", OBJECT);
+                                        WHERE wp_posts.post_type = 'mp-event' AND post_status = 'publish') AS mt_event
+                                       ON wp_mp_timetable_data.event_id = mt_event.ID ORDER BY wp_mp_timetable_data.event_start", OBJECT);
   return $query;
 }
 
@@ -101,10 +102,21 @@ function getWeekDays() {
   $args = array(
     'post_type' => 'mp-column',
     'posts_per_page' => -1,
-    'orderby' => 'ID',
+    'orderby' => 'menu_order',
     'order' => 'ASC'
   );
 
   $query = new WP_Query($args);
+  return $query;
+}
+
+function getWorkingHours(){
+  global $wpdb;
+  $timeFormat = '%h:%i %p';
+  $query = $wpdb->get_results("SELECT TIME_FORMAT(MIN(event_start), '" . $timeFormat . "') as work_start, 
+                                      TIME_FORMAT(MAX(event_end), '" . $timeFormat ."')  as work_end, work_day
+                                  FROM wp_mp_timetable_data INNER JOIN 
+                                  (SELECT ID, menu_order, post_title as work_day FROM wp_posts WHERE post_type = 'mp-column' AND post_status = 'publish') as days 
+                                    ON days.ID = wp_mp_timetable_data.column_id GROUP BY column_id ORDER BY menu_order ASC", OBJECT);
   return $query;
 }

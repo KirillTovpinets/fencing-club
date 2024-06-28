@@ -137,4 +137,34 @@ window.addEventListener("load", () => {
     const image = getImage(["fencing-devider", "mirror"]);
     e.prepend(image);
   });
+
+  const timetalbeFilter = document.querySelector(".mptt-navigation-select");
+
+  if (timetalbeFilter) {
+    timetalbeFilter.classList.add("form-select", "text-body", "w-auto");
+  }
+
+  const timetalbeFilterButton = document.querySelector(".mptt-navigation-tabs");
+
+  if (timetalbeFilterButton) {
+    timetalbeFilterButton.classList.add("nav", "nav-pills", "nav-fill");
+    Array.from(timetalbeFilterButton.children).forEach((e) => {
+      e.classList.add("nav-item");
+      e.firstElementChild.classList.add("nav-link");
+    });
+
+    const activeLink = timetalbeFilterButton.querySelector(".active");
+    if (activeLink) {
+      activeLink.firstElementChild.classList.add("active");
+    }
+
+    timetalbeFilterButton.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target.classList.contains("nav-link")) {
+        const activeLinks = timetalbeFilterButton.querySelectorAll(".active");
+        activeLinks.forEach((e) => e.classList.remove("active"));
+        target.classList.add("active");
+      }
+    });
+  }
 });

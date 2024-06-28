@@ -216,18 +216,26 @@
                       <?php the_title(); ?>
                     </button>
                   </h2>
-                  <div id="collapse<?php echo get_the_ID(); ?>" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div id="collapse<?php echo get_the_ID(); ?>" class="accordion-collapse collapse <?php if (get_post_field('menu_order', get_the_ID()) == '1'): echo 'show'; endif;?>" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                     <?php $events = getAllEvents(get_the_ID()); ?>
                       <?php if ( !empty($events) ): ?>
                         <?php foreach($events as $slot):  ?>
-                          <div class="schedule-item">
-                              <span class="fw-bold fs-3">
-                                <?php echo $slot->event_start . '-' . $slot->event_end; ?>
-                              </span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">
-                                <?php echo $slot->program; ?>
-                              </span>
-                          </div>
+                          <div class="d-flex gap-3 align-items-center schedule-item">
+                            <?php if ($slot->program == 'Individual lessons'): ?>
+                              <i class="bi bi-person fs-1"></i>
+                            <?php else: ?>
+                              <i class="bi bi-people fs-1"></i>
+                            <?php endif; ?>
+                            <div class="schedule-item">
+                              <span class="d-block"><?php echo $slot->description; ?></span>
+                                <span class="fw-bold fs-3">
+                                  <?php echo $slot->event_start . ' - ' . $slot->event_end; ?>
+                                </span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">
+                                  <?php echo $slot->program; ?>
+                                </span>
+                            </div>
+                        </div>
                         <?php endforeach; ?>
                         <?php else: ?>
                           <p>No events found</p>
@@ -239,157 +247,9 @@
             <?php else: ?>
               <p>No events found</p>
             <?php endif; wp_reset_postdata(); ?>
-             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMonday" aria-expanded="true" aria-controls="collapseMonday">
-                  Monday
-                </button>
-              </h2>
-              <div id="collapseMonday" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--<div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTuesday" aria-expanded="false" aria-controls="collapseTuesday">
-                  Tuesday
-                </button>
-              </h2>
-              <div id="collapseTuesday" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                   <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWednesday" aria-expanded="false" aria-controls="collapseWednesday">
-                  Wednesday
-                </button>
-              </h2>
-              <div id="collapseWednesday" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                   <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThursday" aria-expanded="false" aria-controls="collapseThursday">
-                  Thursday
-                </button>
-              </h2>
-              <div id="collapseThursday" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFriday" aria-expanded="false" aria-controls="collapseFriday">
-                    Friday
-                  </button>
-                </h2>
-                <div id="collapseFriday" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                     <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSaturday" aria-expanded="false" aria-controls="collapseSaturday">
-                    Saturday
-                  </button>
-                </h2>
-                <div id="collapseSaturday" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                     <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-clock fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2"><i class="bi bi-geo-alt"></i>GYM</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 align-items-center schedule-item">
-                    <i class="bi bi-lightning fs-1"></i>
-                    <div class="schedule-item">
-                      <span class="d-flex gap-2 text-uppercase"><i class="bi bi-geo-alt"></i>Sport arena</span>
-                      <span class="fw-bold fs-3">08.00-09.00</span> <span class="fs-3 mx-2">|</span> <span class="fw-bold fs-4">Warmup Session</span>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div> -->
+          </div>
+          <div class="mt-3">
+          <a href="<?php echo get_page_link(428); ?>" class="text-uppercase fw-bold">View full schedule</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -410,9 +270,10 @@
                 <i class="bi bi-clock text-secondary"></i>
                 <span class="text-uppercase">Hours</span>
               </div>
-              <p>Mon-Wed: 8am - 10pm</p>
-              <p>Thursday: 8am - 9pm</p>
-              <p>Sunday: 8am - 5pm</p>
+              <?php $hours = getWorkingHours(); ?>
+              <?php foreach($hours as $day): ?>
+                <p><?php echo $day->work_day . ": " . $day->work_start . ' - ' . $day->work_end; ?></p>
+              <?php endforeach; ?>
             </div>
             <div class="col-4">
               <div class="d-flex gap-2 mb-3">
