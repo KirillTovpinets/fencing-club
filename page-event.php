@@ -10,7 +10,7 @@
     </h1>
     <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
 </header>
-<main class="fencing-page-content bg-primary">
+<main class="fencing-page-content">
     <?php echo the_content(); ?>
 </main>
 
