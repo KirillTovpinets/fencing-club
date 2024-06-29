@@ -122,7 +122,7 @@
     </div>
   </section>
   <section>
-    <img src="/eminence/wp-content/themes/fencing/images/section-devider.png" class="fencing-devider">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider">
   </section>
   <section class="fencing-section py-5 bg-primary">
     <span class="fs-2 d-block text-center fw-bold text-white">FUN. FITNESS. FENCING</span>
@@ -188,7 +188,7 @@
 
   </section>
   <section>
-    <img src="/eminence/wp-content/themes/fencing/images/section-devider.png" class="fencing-devider mirror">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider mirror">
   </section>
   <section class="fencing-section fencing-section-parallax-background">
     <div class="pt-5">
