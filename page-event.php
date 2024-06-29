@@ -8,9 +8,9 @@
     <h1 class="text-center fencing-header-title">
       <span class="d-block"><?php echo get_the_title(); ?></span>
     </h1>
-    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
 </header>
 <main class="fencing-page-content">
+<img class="fencing-devider" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
     <?php echo the_content(); ?>
 </main>
 
