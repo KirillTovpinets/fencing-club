@@ -3,7 +3,8 @@
 $size: 80px;
 .fencing {
   &-section-devider {
-    & + section {
+    & + section,
+    & + .wp-block-columns {
       margin-top: -116px;
     }
   }
