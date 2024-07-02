@@ -9,6 +9,7 @@ body {
   --section-title-font: Reesha;
   --bs-body-font-family: #{$primary-font};
   --bs-primary: #{$primary-color};
+  --bs-warning: #{$accent-color};
   --bs-primary-rgb: 217, 217, 204;
   --bs-body-color: #{$primary-color};
   .nav-pills {
