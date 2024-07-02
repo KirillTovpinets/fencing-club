@@ -5,7 +5,7 @@ $size: 80px;
   &-section-devider {
     position: relative;
     z-index: 2;
-    &.mirror {
+    &.section-mirror {
       & + section,
       & + .wp-block-columns,
       & + .wp-block-cover {
