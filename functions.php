@@ -80,10 +80,11 @@ function setting_callback_function( $val ) {
 	<?php
 }
 
-function getAllEvents($dayId){
+function getAllEvents($dayId, $eventId){
   
   global $wpdb;
   $timeFormat = '%h:%i %p';
+  $idFilter = empty($eventId) ? '' : 'AND wp_posts.ID = ' . $eventId;
   $query = $wpdb->get_results("SELECT TIME_FORMAT(wp_mp_timetable_data.event_start, '" . $timeFormat . "') as event_start,
                                       TIME_FORMAT(wp_mp_timetable_data.event_end, '" . $timeFormat ."') as event_end,
                                       wp_mp_timetable_data.description,
@@ -93,7 +94,7 @@ function getAllEvents($dayId){
                                           AND wp_posts.ID = " . $dayId . " AND post_status = 'publish') AS mt_columns
                                        ON wp_mp_timetable_data.column_id = mt_columns.ID
                                       INNER JOIN (SELECT ID, post_title as program FROM wp_posts 
-                                        WHERE wp_posts.post_type = 'mp-event' AND post_status = 'publish') AS mt_event
+                                        WHERE wp_posts.post_type = 'mp-event' AND post_status = 'publish' " . $idFilter . ") AS mt_event
                                        ON wp_mp_timetable_data.event_id = mt_event.ID ORDER BY wp_mp_timetable_data.event_start", OBJECT);
   return $query;
 }
