@@ -13,6 +13,7 @@ body {
   --bs-warning: #{$accent-color};
   --bs-primary-rgb: 217, 217, 204;
   --bs-body-color: #{$primary-color};
+  --bs-dark-rgb: #{$body-bg-color-rgb};
   .nav-pills {
     --bs-nav-pills-link-active-bg: #{$accent-color};
     --bs-nav-link-hover-color: #{$accent-color};
@@ -114,13 +115,18 @@ a {
         font-size: 6rem;
       }
       @media screen and (max-width: 576px) {
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
   }
   &-devider {
     width: 100%;
     margin-bottom: -1px;
+    @media screen and (max-width: 998px) {
+      & + .wp-block-columns {
+        padding-top: 80px !important;
+      }
+    }
     &.mirror {
       transform: rotate(180deg);
       margin-bottom: 0;
@@ -157,7 +163,7 @@ a {
 
   &-section {
     position: relative;
-
+    z-index: 3;
     &.padding-bottom {
       padding-bottom: 200px;
     }
