@@ -107,6 +107,10 @@
   }
 }
 
+.wp-block-column.has-border-color {
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 576px) {
   html .fencing-programs-title {
     font-size: 3.5rem !important;
