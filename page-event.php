@@ -13,7 +13,7 @@
 <img class="fencing-devider" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
     <?php echo the_content(); ?>
     <section class="fencing-section">
-      <h4 class="fencing-section-title fw-bold text-primary text-center">Schedule</h4>
+      <h4 class="fencing-section-title fw-bold text-primary text-center pt-5">Schedule</h4>
       <div class="container">
       <div class="accordion" id="accordionExample">
         <?php $result = getWeekDays(); ?>
