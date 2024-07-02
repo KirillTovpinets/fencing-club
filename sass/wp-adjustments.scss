@@ -2,14 +2,6 @@
   border-radius: 30px;
   position: relative;
   &.bg-blur {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: blur(10px);
-    }
+    backdrop-filter: blur(60px);
   }
 }
