@@ -3,6 +3,8 @@
 $size: 80px;
 .fencing {
   &-section-devider {
+    position: relative;
+    z-index: 2;
     & + section,
     & + .wp-block-columns,
     & + .wp-block-cover {
