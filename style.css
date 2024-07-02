@@ -5,7 +5,7 @@
   position: relative;
   z-index: 2;
 }
-.fencing-section-devider + section, .fencing-section-devider + .wp-block-columns, .fencing-section-devider + .wp-block-cover {
+.fencing-section-devider.mirror + section, .fencing-section-devider.mirror + .wp-block-columns, .fencing-section-devider.mirror + .wp-block-cover {
   margin-top: -116px;
 }
 .fencing-page-header {
