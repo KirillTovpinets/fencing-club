@@ -115,6 +115,11 @@
   backdrop-filter: blur(60px);
 }
 
+.wp-block-columns {
+  position: relative;
+  z-index: 2;
+}
+
 @media screen and (max-width: 576px) {
   html .fencing-programs-title {
     font-size: 3.5rem !important;
