@@ -189,7 +189,7 @@
                   </h2>
                   <div id="collapse<?php echo get_the_ID(); ?>" class="accordion-collapse collapse <?php if (get_post_field('menu_order', get_the_ID()) == '1'): echo 'show'; endif;?>" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                    <?php $events = getAllEvents(get_the_ID()); ?>
+                    <?php $events = getAllEvents(get_the_ID(), null); ?>
                       <?php if ( !empty($events) ): ?>
                         <?php foreach($events as $slot):  ?>
                           <div class="d-flex gap-3 align-items-center schedule-item">
