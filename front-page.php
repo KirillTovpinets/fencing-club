@@ -57,7 +57,7 @@
             <h2 class="text-center fs-1 my-5 fw-bold">Individual Coaching</h2>
             <div class="d-flex gap-2 align-items-center">
               <span class="bi bi-arrow-right-circle accent"></span>
-              <span class="text-uppercase fw-bold">Read more</span>
+              <a href="<?php echo get_page_link(426); ?>" class="text-uppercase fw-bold">Read more</a>
             </div>
           </div>
         </div>
@@ -79,10 +79,10 @@
               <path id="Ext" d="M144.21,4C54.31,4,21.13,52.27,21.73,125.27c.99,119.67,45.85,217.2,122.48,217.8,62.28.49,122.78-94.71,121.87-209.96-.6-76.62-27.75-129.11-121.87-129.11" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
               <path id="Int" d="M48.64,134.99c.77,93.75,35.96,177.98,95.99,178.45,48.79.38,96.14-82.03,95.43-172.31-.47-60.03-21.7-106.14-95.43-106.14s-96.46,42.81-95.99,100Z" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
             </svg>
-            <h2 class="text-center my-5 fs-1 fw-bold">Personalised Conditioning</h2>
+            <h2 class="text-center my-5 fs-1 fw-bold">Open Fencing Bouts</h2>
             <div class="d-flex gap-2 align-items-center">
               <span class="bi bi-arrow-right-circle accent"></span>
-              <span class="text-uppercase fw-bold">Read more</span>
+              <a href="<?php echo get_page_link(427); ?>" class="text-uppercase fw-bold">Read more</a>
             </div>
           </div>
         </div>
