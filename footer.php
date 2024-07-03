@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row border p-5 rounded rounded-5 fencing-border">
-      <div class="col-lg-3 col-md-6 border-end">
+      <div class="col-lg-4 col-md-6 border-end">
         <div class="d-flex flex-column align-items-center justify-content-center">
           <img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white.png" alt="logo">
         <p class="text-center">
@@ -9,30 +9,20 @@
         </p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 border-end">
-        <h4 class="text-uppercase fw-bold mb-4">Newsletter</h4>
-
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Your email">
-          <button class="input-text-addon btn fencing-btn">Subscribe</button>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 border-end">
+      <div class="col-lg-4 col-md-6 border-end">
         <h4 class="text-uppercase fw-bold mb-4">Club</h4>
         <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Programs</a></li>
+          <li><a href="<?php echo get_page_link(33); ?>">About us</a></li>
+          <li><a href="<?php echo get_page_link(428); ?>">Full Schedule</a></li>
+          <li><a href="<?php echo get_page_link(128); ?>">Our Team</a></li>
+          <li><a href="<?php echo get_page_link(372); ?>">Contact</a></li>
         </ul>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-4 col-md-6 container">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
-          <!-- 28457 Ballard Dr, unit c1, Lake Forest, IL 60045  -->
           <?php echo get_option('club-address'); ?><br>
-          <!-- +13127188617 -->
           Tel. <a href="tel:+13127188617"><?php echo get_option('club-phone'); ?></a> <br>
-          <!-- eminencefa@gmail.com -->
           Email: <a href="mailto:eminencefa@gmail.com"><?php echo get_option('club-email'); ?></a>
         </p>
         <div class="d-flex gap-3 align-items-center fs-2">

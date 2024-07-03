@@ -504,7 +504,7 @@ footer {
 footer h4 {
   font-size: 1rem;
 }
-footer .col-md-3 {
+footer div[class^=col-lg-] {
   --bs-gutter-x: 4rem;
 }
 footer ul {
@@ -518,11 +518,8 @@ footer ul li a {
 footer .border-end:first-child, footer .border-end:nth-child(2) {
   margin-bottom: 3rem;
 }
-footer .border-end:nth-child(2) {
-  border-right: none !important;
-}
 @media screen and (max-width: 769px) {
-  footer .border-end {
+  footer .border-end:nth-child(2) {
     border-right: none !important;
   }
 }
