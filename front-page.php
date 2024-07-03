@@ -142,7 +142,7 @@
                 <h4 class="text-uppercase fw-bold text-center"><?php the_title(); ?></h4>
                 <span class="d-flex read-more gap-2">
                   <i class="bi bi-arrow-right-circle"></i>
-                  Read more
+                  <a href="<?php echo get_page_link(get_the_ID()); ?>" class="text-uppercase fw-bold">Read more</a>
                 </span>
               </div>
             </div>
@@ -151,42 +151,6 @@
         <?php else: ?>
           <p>No programs found</p>
         <?php endif; wp_reset_postdata(); ?>
-        <!-- <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
-          <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/intermediate.png" alt="" class="height-auto d-block w-100">
-            <div class="program-description title">
-              <h4 class="text-uppercase fw-bold">Intermediate</h4>
-              <span class="d-flex read-more gap-2">
-                <i class="bi bi-arrow-right-circle"></i>
-                Read more
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
-          <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/competitive.png" alt="" class="height-auto d-block w-100">
-          <div class="program-description title">
-            <h4 class="text-uppercase fw-bold">Competitive</h4>
-            <span class="d-flex read-more gap-2">
-              <i class="bi bi-arrow-right-circle"></i>
-              Read more
-              </span>
-          </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
-          <div class="rounded rounded-4 overflow-hidden position-relative">
-            <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/elite.png" alt="" class="height-auto d-block w-100">
-            <div class="program-description title">
-              <h4 class="text-uppercase fw-bold text-center">Elite <br> classes</h4>
-              <span class="d-flex read-more gap-2">
-                <i class="bi bi-arrow-right-circle"></i>
-                Read more
-              </span>
-            </div>
-          </div>
-        </div> -->
       </div>
       <div class="text-center">
         <button class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</button>
