@@ -111,6 +111,28 @@ function getWeekDays() {
   return $query;
 }
 
+function getPrograms() {
+  global $wpdb;
+  $query = $wpdb->get_results("SELECT term_id, name FROM wp_terms WHERE name = 'Program'", OBJECT);
+  
+  $args = array(
+    'post_type' => 'mp-event',
+    'posts_per_page' => -1,
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+    'tax_query' => array(
+      array(
+          'taxonomy' => 'mp-event_category', //double check your taxonomy name in you dd 
+          'field'    => 'id',
+          'terms'    => $query[0]->term_id,
+      ),
+    ),
+  );
+
+  $query = new WP_Query($args);
+  return $query;
+}
+
 function getWorkingHours(){
   global $wpdb;
   $timeFormat = '%h:%i %p';
