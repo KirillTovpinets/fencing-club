@@ -71,6 +71,11 @@
           "name": "Primary"
         },
         {
+          "slug": "bg-primary",
+          "color": "#d9d9cc",
+          "name": "Background Primary"
+        },
+        {
           "slug": "secondary",
           "color": "#666755",
           "name": "Secondary"
