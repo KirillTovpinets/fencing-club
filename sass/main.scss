@@ -27,7 +27,17 @@ body {
 .z-4 {
   z-index: 4;
 }
+.navbar-toggler {
+  &:focus,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 
+  &:hover {
+    color: $accent-color;
+  }
+}
 .btn-xlg {
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-padding-x: 2rem;
@@ -53,6 +63,50 @@ a {
   }
 }
 .fencing {
+  &-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1031;
+    background: #121212;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    #menu-toggler-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 4.5rem;
+      color: $borders-color;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+        transform: rotate(90deg);
+      }
+    }
+
+    .fencing-main-nav {
+      .page_item {
+        padding: 0.3rem 0px;
+        a {
+          color: $borders-color;
+          font-size: 1.5rem;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
   &-border {
     --bs-border-color: #{$borders-color};
   }

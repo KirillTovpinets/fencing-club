@@ -206,6 +206,14 @@ body .nav-pills {
   z-index: 4;
 }
 
+.navbar-toggler:focus, .navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler:hover {
+  color: #db6015;
+}
+
 .btn-xlg {
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-padding-x: 2rem;
@@ -230,6 +238,43 @@ a:hover {
   color: #db6015;
 }
 
+.fencing-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1031;
+  background: #121212;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.fencing-menu #menu-toggler-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4.5rem;
+  color: #666755;
+  transition: all 0.3s ease;
+}
+.fencing-menu #menu-toggler-close:hover {
+  color: #db6015;
+  transform: rotate(90deg);
+}
+.fencing-menu .fencing-main-nav .page_item {
+  padding: 0.3rem 0px;
+}
+.fencing-menu .fencing-main-nav .page_item a {
+  color: #666755;
+  font-size: 1.5rem;
+}
+.fencing-menu .fencing-main-nav .page_item a:hover {
+  color: #db6015;
+}
+.fencing-menu.active {
+  display: flex;
+}
 .fencing-border {
   --bs-border-color: #666755;
 }

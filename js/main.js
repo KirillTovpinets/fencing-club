@@ -167,4 +167,21 @@ window.addEventListener("load", () => {
       }
     });
   }
+
+  const menuToggler = document.querySelector("#menu-toggler");
+  const menuTogglerClose = document.querySelector("#menu-toggler-close");
+
+  if (menuToggler) {
+    menuToggler.addEventListener("click", () => {
+      const menu = document.querySelector("#fencing-main-menu");
+      menu.classList.toggle("active");
+    });
+  }
+
+  if (menuTogglerClose) {
+    menuTogglerClose.addEventListener("click", () => {
+      const menu = document.querySelector("#fencing-main-menu");
+      menu.classList.toggle("active");
+    });
+  }
 });
