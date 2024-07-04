@@ -28,7 +28,12 @@
   padding: 60px 40px;
   border-radius: 16px;
   top: calc(50% - 260px);
-  left: 300px;
+  left: calc(50% - 646px);
+}
+@media screen and (max-width: 991px) {
+  .fencing-page-content .fencing-contact-info {
+    display: none;
+  }
 }
 .fencing-page-content .fencing-contact-info p {
   font-size: 1rem;

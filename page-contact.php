@@ -26,7 +26,10 @@
             <div class="col-lg-4">
           <i class="bi bi-clock fs-3"></i>
           <h5 class="mb-4">Hours</h5>
-          <p>asdfasdf</p>
+          <?php $hours = getWorkingHours(); ?>
+              <?php foreach($hours as $day): ?>
+                <p><?php echo $day->work_day . ": " . $day->work_start . ' - ' . $day->work_end; ?></p>
+              <?php endforeach; ?>
           </div>
             <div class="col-lg-4">
           <i class="bi bi-share fs-3"></i>
