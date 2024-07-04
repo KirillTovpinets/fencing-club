@@ -15,7 +15,7 @@
 
     <section class="fencing-section">
       <div class="fencing-contact-info">
-        <h2 class="header">Contact Us</h2>
+        <h2 class="header text-uppercase">Contact Us</h2>
         <p class="description">Eminence Fencing Academy prides itself on being one of the best venues at which to host a fencing event.</p>
         <div class="row mt-3">
           <div class="col-lg-4">
