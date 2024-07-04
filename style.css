@@ -20,6 +20,13 @@
 .fencing-page-content a {
   color: var(--bs-body);
 }
+.fencing-page-content .contact-form textarea.form-control {
+  height: 200px;
+}
+.fencing-page-content .contact-form .form-control + label {
+  color: #121212;
+  background: none;
+}
 .fencing-page-content .fencing-contact-info {
   position: absolute;
   background: #fff;

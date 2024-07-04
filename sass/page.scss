@@ -27,6 +27,18 @@ $size: 80px;
         color: var(--bs-body);
       }
 
+      .contact-form {
+        textarea.form-control {
+          height: 200px;
+        }
+        .form-control {
+          & + label {
+            color: $body-bg-color;
+            background: none;
+          }
+        }
+      }
+
       .fencing-contact-info {
         position: absolute;
         background: #fff;
