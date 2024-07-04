@@ -332,6 +332,10 @@ a {
         }
       }
 
+      a:hover {
+        color: $body-bg-color;
+      }
+
       img {
         transform: scale3d(1, 1, 1);
         transition: $hover-transition;
