@@ -6,7 +6,7 @@
 }
 .fencing-section-devider {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .fencing-section-devider.section-mirror + section, .fencing-section-devider.section-mirror + .wp-block-columns, .fencing-section-devider.section-mirror + .wp-block-cover {
   margin-top: -116px;
@@ -195,6 +195,10 @@ body .nav-pills {
 
 .navbar {
   --bs-navbar-color: #f8f6e2;
+}
+
+.z-4 {
+  z-index: 4;
 }
 
 .btn-xlg {

@@ -24,6 +24,10 @@ body {
   --bs-navbar-color: #{$primary-color};
 }
 
+.z-4 {
+  z-index: 4;
+}
+
 .btn-xlg {
   --bs-btn-padding-y: 0.75rem;
   --bs-btn-padding-x: 2rem;
