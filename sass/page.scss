@@ -32,6 +32,7 @@ $size: 80px;
           height: 200px;
         }
         .form-control {
+          &,
           & + label {
             color: $body-bg-color;
             background: none;

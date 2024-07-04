@@ -23,7 +23,7 @@
 .fencing-page-content .contact-form textarea.form-control {
   height: 200px;
 }
-.fencing-page-content .contact-form .form-control + label {
+.fencing-page-content .contact-form .form-control, .fencing-page-content .contact-form .form-control + label {
   color: #121212;
   background: none;
 }
