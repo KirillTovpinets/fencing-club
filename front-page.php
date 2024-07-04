@@ -4,7 +4,7 @@
       <span class="d-block fs-5 academy">FENCING ACADEMY</span>
       <span class="d-block text-uppercase"><?php echo get_the_title(); ?></span>
     </h1>
-    <button class="btn fencing-btn btn-xlg rounded-pill">Get started today</button>
+    <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill">Get started today</button>
   </header>
   <section class="fencing-section">
     <div class="container">
@@ -113,7 +113,7 @@
           <p class="fencing-section-description">
             Our focus is on dynamic functional training and proper fencing technique.
           </p>
-          <button class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</button>
+          <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</button>
         </div>
         <div class="col-md-6">
           <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
@@ -153,7 +153,7 @@
         <?php endif; wp_reset_postdata(); ?>
       </div>
       <div class="text-center">
-        <button class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</button>
+        <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</button>
       </div>
     </div>
 
@@ -243,7 +243,7 @@
               </div>
               <?php $hours = getWorkingHours(); ?>
               <?php foreach($hours as $day): ?>
-                <p style="font-size: 0.75rem"><?php echo substr($day->work_day, 0, 3) . ".: " . $day->work_start . ' - ' . $day->work_end; ?></p>
+                <p style="font-size: 0.75rem"><?php echo substr($day->work_day, 0, 3) . ": " . $day->work_start . ' - ' . $day->work_end; ?></p>
               <?php endforeach; ?>
             </div>
             <div class="col-4">
