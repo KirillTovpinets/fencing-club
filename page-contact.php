@@ -13,7 +13,7 @@
     <?php echo the_content(); ?>
 
 
-    <div class="fencing-section">
+    <section class="fencing-section">
       <div class="fencing-contact-info">
         <h2 class="header">Contact Us</h2>
         <p class="description">Eminence Fencing Academy prides itself on being one of the best venues at which to host a fencing event.</p>
@@ -42,7 +42,7 @@
         </div>
         <div id="google-map">
         </div>
-    </div>
+      </section>
 </main>
 
 
