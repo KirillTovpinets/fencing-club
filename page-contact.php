@@ -28,7 +28,7 @@
           <h5 class="mb-4">Hours</h5>
           <?php $hours = getWorkingHours(); ?>
               <?php foreach($hours as $day): ?>
-                <p><?php echo $day->work_day . ": " . $day->work_start . ' - ' . $day->work_end; ?></p>
+                <p><?php echo substr($day->work_day, 0, 3) . ".: " . $day->work_start . ' - ' . $day->work_end; ?></p>
               <?php endforeach; ?>
           </div>
             <div class="col-lg-4">
