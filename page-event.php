@@ -6,7 +6,7 @@
 
 <header class="fencing-header fencing-page-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : (bloginfo('template_url') . "/images/backgrounds/3.png"); ?>')">
     <h1 class="text-center fencing-header-title">
-      <span class="d-block"><?php echo get_the_title(); ?></span>
+      <span class="d-block text-uppercase"><?php echo get_the_title(); ?></span>
     </h1>
 </header>
 <main class="fencing-page-content">
