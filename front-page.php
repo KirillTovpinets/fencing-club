@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/backgrounds/header.png')">
     <h1 class="text-center fencing-header-title">
-      <span class="d-block fs-5 academy">FENCING ACADEMY</span>
+      <span class="d-block fs-5 academy text-uppercase">FENCING ACADEMY</span>
       <span class="d-block"><?php echo get_the_title(); ?></span>
     </h1>
     <button class="btn fencing-btn btn-xlg rounded-pill">Get started today</button>
