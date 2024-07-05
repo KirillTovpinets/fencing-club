@@ -155,6 +155,12 @@
   .wp-block-columns.has-accent-background-color p {
     padding: 0 !important;
   }
+  .wp-block-columns p[style^=padding-right],
+  .wp-block-columns h3[style^=padding-right],
+  .wp-block-columns .wp-block-group[style^=padding-right] {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
   .wp-block-columns.fencing-md-reverse {
     flex-direction: column-reverse;
   }

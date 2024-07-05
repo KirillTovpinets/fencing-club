@@ -32,6 +32,14 @@
         padding: 0 !important;
       }
     }
+    p,
+    h3,
+    .wp-block-group {
+      &[style^="padding-right"] {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+    }
     &.fencing-md-reverse {
       flex-direction: column-reverse;
     }
