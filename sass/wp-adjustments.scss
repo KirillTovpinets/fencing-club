@@ -22,7 +22,8 @@
   @media screen and (max-width: 769px) {
     &:not(.fencing-cover) {
       gap: 50px;
-      padding: 0 20px !important;
+      padding-right: 20px !important;
+      padding-left: 20px !important;
     }
     &.has-accent-background-color {
       padding: 40px 20px !important;
