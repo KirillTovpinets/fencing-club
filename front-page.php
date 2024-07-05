@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/backgrounds/header.png')">
     <h1 class="text-center fencing-header-title">
-      <span class="d-block fs-5 academy">FENCING ACADEMY</span>
-      <span class="d-block text-uppercase"><?php echo get_the_title(); ?></span>
+      <span class="d-block fs-5 academy animate__animated animate__fadeIn">FENCING ACADEMY</span>
+      <span class="d-block text-uppercase animate__animated animate__fadeIn animate__delay-1s"><?php echo get_the_title(); ?></span>
     </h1>
-    <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill">Get started today</a>
+    <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill animate__animated animate__fadeIn animate__delay-1s">Get started today</a>
   </header>
   <section class="fencing-section">
     <div class="container">

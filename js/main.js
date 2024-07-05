@@ -184,4 +184,13 @@ window.addEventListener("load", () => {
       menu.classList.toggle("active");
     });
   }
+
+  const fencingDevider = document.querySelector(
+    ".fencing-section-devider.section-mirror",
+  );
+
+  if (fencingDevider) {
+    const height = fencingDevider.clientHeight;
+    fencingDevider.nextElementSibling.style.marginTop = `-${height}px`;
+  }
 });

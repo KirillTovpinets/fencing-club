@@ -5,7 +5,7 @@
 @import "./wp-adjustments.scss";
 @import "./variables.scss";
 @import "./responsive.scss";
-@import "animate.css";
+@import "../node_modules/animate.css/animate.min.css";
 
 body {
   --heading-font: Roboto, sans-serif;
