@@ -155,7 +155,7 @@
   .wp-block-columns.has-accent-background-color p {
     padding: 0 !important;
   }
-  .wp-block-columns:nth-child(2n-1) {
+  .wp-block-columns.fencing-md-reverse {
     flex-direction: column-reverse;
   }
 }

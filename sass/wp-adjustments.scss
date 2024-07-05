@@ -32,7 +32,7 @@
         padding: 0 !important;
       }
     }
-    &:nth-child(2n - 1) {
+    &.fencing-md-reverse {
       flex-direction: column-reverse;
     }
   }
