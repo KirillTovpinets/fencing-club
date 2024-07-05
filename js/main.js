@@ -184,7 +184,9 @@ window.addEventListener("load", () => {
       menu.classList.toggle("active");
     });
   }
+});
 
+window.addEventListener("resize", () => {
   const fencingDevider = document.querySelector(
     ".fencing-section-devider.section-mirror",
   );
