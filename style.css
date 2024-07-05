@@ -270,14 +270,14 @@ a:hover {
   color: #db6015;
   transform: rotate(90deg);
 }
-.fencing-menu .fencing-main-nav .page_item {
+.fencing-menu .fencing-main-nav .menu-item {
   padding: 0.3rem 0px;
 }
-.fencing-menu .fencing-main-nav .page_item a {
+.fencing-menu .fencing-main-nav .menu-item a {
   color: #666755;
   font-size: 1.5rem;
 }
-.fencing-menu .fencing-main-nav .page_item a:hover {
+.fencing-menu .fencing-main-nav .menu-item a:hover {
   color: #db6015;
 }
 .fencing-menu.active {
