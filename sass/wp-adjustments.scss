@@ -20,7 +20,7 @@
   position: relative;
 
   @media screen and (max-width: 769px) {
-    &:not(.wp-container-core-columns-is-layout-7) {
+    &:not(.fencing-cover) {
       gap: 50px;
       padding: 0 20px !important;
     }

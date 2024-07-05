@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "./node_modules/animate.css/animate.min.css";
+@import "../node_modules/animate.css/animate.min.css";
 .fencing-section-schedule {
   padding-bottom: 80px;
 }
@@ -9,9 +9,7 @@
   position: relative;
   z-index: 4;
 }
-.fencing-section-devider.section-mirror + section,
-.fencing-section-devider.section-mirror + .wp-block-columns,
-.fencing-section-devider.section-mirror + .wp-block-cover {
+.fencing-section-devider.section-mirror + section, .fencing-section-devider.section-mirror + .wp-block-columns, .fencing-section-devider.section-mirror + .wp-block-cover {
   margin-top: -116px;
 }
 .fencing-page-header {
@@ -26,8 +24,7 @@
 .fencing-page-content .contact-form textarea.form-control {
   height: 200px;
 }
-.fencing-page-content .contact-form .form-control,
-.fencing-page-content .contact-form .form-control + label {
+.fencing-page-content .contact-form .form-control, .fencing-page-content .contact-form .form-control + label {
   color: #121212;
   background: none;
 }
@@ -98,21 +95,11 @@
     padding: 20px 50px 50px;
   }
 }
-.fencing-page-content
-  .wp-block-columns.with-pseudo-element
-  .wp-block-column:first-child
-  .wp-block-cover,
-.fencing-page-content
-  .wp-block-columns.with-pseudo-element
-  .wp-block-column:last-child
-  .wp-block-cover {
+.fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:first-child .wp-block-cover, .fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:last-child .wp-block-cover {
   position: relative;
 }
 @media screen and (min-width: 994px) {
-  .fencing-page-content
-    .wp-block-columns.with-pseudo-element
-    .wp-block-column:first-child
-    .wp-block-cover:after {
+  .fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:first-child .wp-block-cover:after {
     content: "";
     border-bottom-left-radius: 16px;
     width: 80px;
@@ -124,10 +111,7 @@
     background: #fff;
     z-index: 2;
   }
-  .fencing-page-content
-    .wp-block-columns.with-pseudo-element
-    .wp-block-column:last-child
-    .wp-block-cover::before {
+  .fencing-page-content .wp-block-columns.with-pseudo-element .wp-block-column:last-child .wp-block-cover::before {
     content: "";
     border-top-right-radius: 16px;
     width: 80px;
@@ -142,7 +126,7 @@
 }
 
 @media screen and (max-width: 769px) {
-  .wp-block-column[style^="border-right-color"] {
+  .wp-block-column[style^=border-right-color] {
     border-right: none !important;
     border-bottom: 1px solid #666755;
     padding-bottom: 20px;
@@ -160,7 +144,7 @@
   position: relative;
 }
 @media screen and (max-width: 769px) {
-  .wp-block-columns:not(.wp-container-core-columns-is-layout-7) {
+  .wp-block-columns:not(.fencing-cover) {
     gap: 50px;
     padding: 0 20px !important;
   }
@@ -230,8 +214,7 @@ body .nav-pills {
   z-index: 4;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:focus-visible {
+.navbar-toggler:focus, .navbar-toggler:focus-visible {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -332,8 +315,7 @@ a:hover {
     padding-bottom: 80px;
   }
 }
-.fencing-page-header,
-.fencing-header {
+.fencing-page-header, .fencing-header {
   padding: 150px 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,8 +323,7 @@ a:hover {
   position: relative;
   z-index: 1;
 }
-.fencing-page-header::after,
-.fencing-header::after {
+.fencing-page-header::after, .fencing-header::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -350,28 +331,24 @@ a:hover {
   background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   z-index: 1;
 }
-.fencing-page-header-title,
-.fencing-header-title {
+.fencing-page-header-title, .fencing-header-title {
   position: relative;
   z-index: 2;
   font-family: var(--section-title-font);
   font-size: 6rem;
   color: var(--bs-primary);
 }
-.fencing-page-header-title .academy,
-.fencing-header-title .academy {
+.fencing-page-header-title .academy, .fencing-header-title .academy {
   font-family: var(--heading-font);
   letter-spacing: 3pt;
 }
 @media screen and (max-width: 998px) {
-  .fencing-page-header-title,
-  .fencing-header-title {
+  .fencing-page-header-title, .fencing-header-title {
     font-size: 6rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .fencing-page-header-title,
-  .fencing-header-title {
+  .fencing-page-header-title, .fencing-header-title {
     font-size: 3rem;
   }
 }
@@ -389,8 +366,7 @@ a:hover {
   margin-bottom: 0;
   margin-top: -1px;
 }
-.fencing-btn,
-.fencing-btn-outline {
+.fencing-btn, .fencing-btn-outline {
   --bs-btn-color: #fff;
   --bs-btn-bg: #db6015;
   --bs-btn-border-color: #db6015;
@@ -411,8 +387,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
-.fencing-btn-outline,
-.fencing-btn-outline-outline {
+.fencing-btn-outline, .fencing-btn-outline-outline {
   background: none;
   border: 1px solid var(--bs-primary);
 }
@@ -435,8 +410,7 @@ a:hover {
   border-bottom: 1px solid #666755;
   border-radius: 0;
 }
-.fencing-section .contact-form .form-control,
-.fencing-section .contact-form .form-control + label {
+.fencing-section .contact-form .form-control, .fencing-section .contact-form .form-control + label {
   color: #f8f6e2;
   background: none;
 }
@@ -594,7 +568,7 @@ footer {
 footer h4 {
   font-size: 1rem;
 }
-footer div[class^="col-lg-"] {
+footer div[class^=col-lg-] {
   --bs-gutter-x: 4rem;
 }
 footer ul {
@@ -605,8 +579,7 @@ footer ul li a {
   color: #f8f6e2;
   text-decoration: none;
 }
-footer .border-end:first-child,
-footer .border-end:nth-child(2) {
+footer .border-end:first-child, footer .border-end:nth-child(2) {
   margin-bottom: 3rem;
 }
 @media screen and (max-width: 769px) {
