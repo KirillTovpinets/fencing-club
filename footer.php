@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row border p-5 rounded rounded-5 fencing-border">
-      <div class="col-lg-4 col-md-6 border-end">
+      <div class="col-lg-4 col-md-6 border-end animate">
         <div class="d-flex flex-column align-items-center justify-content-center">
           <img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white.png" alt="logo">
         <p class="text-center">
@@ -9,7 +9,7 @@
         </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 border-end">
+      <div class="col-lg-4 col-md-6 border-end animate animate__delay-1s">
         <h4 class="text-uppercase fw-bold mb-4">Club</h4>
         <?php wp_nav_menu(array(
           // 'menu'				=> "", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
@@ -31,7 +31,7 @@
           // 'item_spacing'		=> "", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
         )); ?>
       </div>
-      <div class="col-lg-4 col-md-6 container">
+      <div class="col-lg-4 col-md-6 container animate animate__delay-2s">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
           <?php echo get_option('club-address'); ?><br>

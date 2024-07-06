@@ -83,7 +83,7 @@ function setting_callback_function( $val ) {
 function getAllEvents($dayId, $eventId){
   
   global $wpdb;
-  $timeFormat = '%h:%i %p';
+  $timeFormat = '%h%p';
   $idFilter = empty($eventId) ? '' : 'AND wp_posts.ID = ' . $eventId;
   $query = $wpdb->get_results("SELECT TIME_FORMAT(wp_mp_timetable_data.event_start, '" . $timeFormat . "') as event_start,
                                       TIME_FORMAT(wp_mp_timetable_data.event_end, '" . $timeFormat ."') as event_end,
@@ -135,7 +135,7 @@ function getPrograms() {
 
 function getWorkingHours(){
   global $wpdb;
-  $timeFormat = '%h:%i %p';
+  $timeFormat = '%h%p';
   $query = $wpdb->get_results("SELECT TIME_FORMAT(MIN(event_start), '" . $timeFormat . "') as work_start, 
                                       TIME_FORMAT(MAX(event_end), '" . $timeFormat ."')  as work_end, work_day
                                   FROM wp_mp_timetable_data INNER JOIN 

@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <header class="fencing-header fencing-page-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : (bloginfo('template_url') . "/images/backgrounds/1.png"); ?>')">
-    <h1 class="text-center fencing-header-title">
+    <h1 class="text-center fencing-header-title animate">
       <span class="d-block text-uppercase"><?php echo get_the_title(); ?></span>
     </h1>
 </header>
@@ -13,9 +13,9 @@
 <img class="fencing-devider" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
     <?php echo the_content(); ?>
     <section class="fencing-section bg-dark fencing-section-schedule">
-      <h4 class="fencing-section-title fw-bold text-primary text-center pt-5">Schedule</h4>
+      <h4 class="fencing-section-title fw-bold text-primary text-center pt-5 animate">Schedule</h4>
       <div class="container">
-      <div class="accordion" id="accordionExample">
+      <div class="accordion animate__delay-1s" id="accordionExample">
         <?php $result = getWeekDays(); ?>
         <?php $currentPageId = get_the_ID(); ?>
         <?php if ( $result->have_posts()) : ?>

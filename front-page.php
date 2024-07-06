@@ -9,7 +9,7 @@
   <section class="fencing-section">
     <div class="container">
       <div class="row px-5">
-        <div class="col-md-4 my-md-0 my-4">
+        <div class="col-md-4 my-md-0 my-4 animate">
           <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
             <svg id="Medal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 336" class="fencing-svg">
               <g>
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 my-md-0 my-4">
+        <div class="col-md-4 my-md-0 my-4 animate animate__delay-1s">
           <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
             <svg id="Layer_2" class="fencing-svg swords" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 225">
               <g id="Final">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 my-md-0 my-4">
+        <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
           <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
             <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
               <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
@@ -91,11 +91,11 @@
   </setction>
   <section class="fencing-section">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center animate">
         <div class="col-md-6">
           <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Fencing <span class="accent">Programs</span> <br> for all ages and abilities</h3>
           <p class="fencing-section-description">
             From kids' classes to adult training sessions, we have programs tailored for every age group and skill level.
@@ -108,14 +108,14 @@
   <section class="fencing-section my-md-0 mt-5 padding-bottom">
     <div class="container">
       <div class="row align-items-center flex-md-row flex-column-reverse">
-        <div class="col-md-6 mb-md-0 mb-5">
+        <div class="col-md-6 mb-md-0 mb-5 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Contact and <br>non-contact <br><span class="accent">Training</span> </h3>
           <p class="fencing-section-description">
             Our focus is on dynamic functional training and proper fencing technique.
           </p>
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animate animate__delay-1s">
           <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
       </div>
@@ -125,8 +125,8 @@
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider">
   </section>
   <section class="fencing-section py-5 bg-primary">
-    <span class="fs-2 d-block text-center fw-bold text-white">FUN. FITNESS. FENCING</span>
-    <h2 class="text-center fw-bold fencing-programs-title text-white">
+    <span class="fs-2 d-block text-center fw-bold text-white animate">FUN. FITNESS. FENCING</span>
+    <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
       PROGRAMS
     </h2>
 
@@ -135,7 +135,7 @@
         <?php $programs = getPrograms(); ?>
         <?php if ( !empty($programs) ): ?>
           <?php while ( $programs->have_posts() ) : $programs->the_post(); ?>
-          <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0">
+          <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
             <div class="rounded rounded-4 overflow-hidden position-relative">
               <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive.png' ?>" alt="" class="height-auto d-block w-100">
               <div class="program-description title">
@@ -152,7 +152,7 @@
           <p>No programs found</p>
         <?php endif; wp_reset_postdata(); ?>
       </div>
-      <div class="text-center">
+      <div class="text-center animate">
         <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</a>
       </div>
     </div>
@@ -162,7 +162,7 @@
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider mirror">
   </section>
   <section class="fencing-section fencing-section-parallax-background">
-    <div class="pt-5">
+    <div class="pt-5 animate">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
         <div class="fs-2 text-center w-50">
           <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid nostrum esse repudiandae error non dolor, reiciendis sed in veritatis praesentium, quos, nisi consequuntur vel minus necessitatibus voluptate earum aut?"</p>
@@ -175,7 +175,7 @@
   <section class="fencing-section schedule-contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6 mb-3 animate">
           <h4 class="fencing-section-title fw-bold fs-1">Schedule</h4>
           <div class="accordion" id="accordionExample">
             <?php $result = getWeekDays(); ?>
@@ -223,7 +223,7 @@
           <a href="<?php echo get_page_link(428); ?>" class="text-uppercase fw-bold">View full schedule</a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animate animate__delay-1s">
           <h4 class="fencing-section-title fw-bold fs-1">Contact</h4>
 
           <?php echo do_shortcode('[contact-form-7 id="3adedfe" title="Contact form" html_class="contact-form"]'); ?>

@@ -203,6 +203,7 @@ body {
   --bs-primary-rgb: 217, 217, 204;
   --bs-body-color: #f8f6e2;
   --bs-dark-rgb: 18, 18, 18;
+  --animate-delay: 0.5s;
   background: #000;
 }
 body .nav-pills {
@@ -212,6 +213,11 @@ body .nav-pills {
 
 .navbar {
   --bs-navbar-color: #f8f6e2;
+  transition: all 0.3s ease;
+}
+.navbar.fencing-navbar {
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .z-4 {
@@ -224,6 +230,10 @@ body .nav-pills {
 }
 .navbar-toggler:hover {
   color: #db6015;
+}
+
+.animate {
+  opacity: 0;
 }
 
 .btn-xlg {
@@ -591,9 +601,16 @@ footer ul li a {
 footer .border-end:first-child, footer .border-end:nth-child(2) {
   margin-bottom: 3rem;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 991px) {
   footer .border-end:nth-child(2) {
     border-right: none !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  footer .border-end {
+    border-right: none !important;
+    border-bottom: 1px solid #666755;
+    padding-bottom: 50px;
   }
 }
 

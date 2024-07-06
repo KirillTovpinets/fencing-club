@@ -107,37 +107,16 @@ async function initMap() {
 
 initMap();
 
-window.addEventListener("load", () => {
-  const sectionsWithBottomDevider = document.querySelectorAll(
-    ".fencing-section.with-bottom-devider",
-  );
+function isOnScreen(element, top_offset) {
+  top_offset = top_offset === undefined ? 75 : top_offset;
+  if (element == undefined) return false;
+  var bounds = element.getBoundingClientRect();
+  var output =
+    bounds.top + top_offset < window.innerHeight && bounds.bottom > 0;
+  return output;
+}
 
-  const sectionsWithTopDevider = document.querySelectorAll(
-    ".fencing-section.with-top-devider",
-  );
-
-  const isMAMP = document.location.host === "localhost:8888";
-  const prefix = isMAMP ? "/eminence/" : "/";
-
-  const getImage = (classes) => {
-    const image = document.createElement("img");
-    image.setAttribute(
-      "src",
-      prefix + "wp-content/themes/fencing/images/section-devider.png",
-    );
-    image.classList.add(...classes);
-    return image;
-  };
-  sectionsWithBottomDevider.forEach((e) => {
-    const image = getImage(["fencing-devider"]);
-    e.append(image);
-  });
-
-  sectionsWithTopDevider.forEach((e) => {
-    const image = getImage(["fencing-devider", "mirror"]);
-    e.prepend(image);
-  });
-
+function addClassToScheduleFilter() {
   const timetalbeFilter = document.querySelector(".mptt-navigation-select");
 
   if (timetalbeFilter) {
@@ -167,7 +146,9 @@ window.addEventListener("load", () => {
       }
     });
   }
+}
 
+function addMenuTogglerHandler() {
   const menuToggler = document.querySelector("#menu-toggler");
   const menuTogglerClose = document.querySelector("#menu-toggler-close");
 
@@ -183,6 +164,32 @@ window.addEventListener("load", () => {
       const menu = document.querySelector("#fencing-main-menu");
       menu.classList.toggle("active");
     });
+  }
+}
+
+function addAnimationLogic() {
+  const animatedElements = document.querySelectorAll(".animate");
+  animatedElements.forEach((element) => {
+    if (isOnScreen(element)) {
+      element.classList.add("animate__animated", "animate__fadeIn");
+    }
+  });
+}
+
+window.addEventListener("load", () => {
+  addClassToScheduleFilter();
+  addMenuTogglerHandler();
+});
+
+window.addEventListener("scroll", () => {
+  addAnimationLogic();
+
+  if (window.scrollY > 20) {
+    const header = document.querySelector(".navbar.fixed-top");
+    header.classList.add("fencing-navbar");
+  } else if (window.scrollY === 0) {
+    const header = document.querySelector(".navbar.fixed-top");
+    header.classList.remove("fencing-navbar");
   }
 });
 
