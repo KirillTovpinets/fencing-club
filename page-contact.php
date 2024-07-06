@@ -14,7 +14,7 @@
 
 
     <section class="fencing-section">
-      <div class="fencing-contact-info animate">
+      <div class="fencing-contact-info animate animate__delay-1s">
         <h2 class="header text-uppercase">Contact Us</h2>
         <p class="description">Eminence Fencing Academy prides itself on being one of the best venues at which to host a fencing event.</p>
         <div class="row mt-3">
@@ -43,7 +43,7 @@
           </div>
         </div>
         </div>
-        <div id="google-map animate">
+        <div id="google-map" class="animate">
         </div>
       </section>
 </main>
