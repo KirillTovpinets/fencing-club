@@ -5,7 +5,7 @@
 @import "./wp-adjustments.scss";
 @import "./variables.scss";
 @import "./responsive.scss";
-@import "../node_modules/animate.css/animate.min.css";
+@import "./node_modules/animate.css/animate.min.css";
 
 body {
   --heading-font: Roboto, sans-serif;
@@ -226,6 +226,9 @@ a {
     z-index: 3;
     &.padding-bottom {
       padding-bottom: 200px;
+      @media screen and (max-width: 998px) {
+        padding-bottom: 50px;
+      }
     }
 
     &.with-bottom-devider {
