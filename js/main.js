@@ -179,6 +179,7 @@ function addAnimationLogic() {
 window.addEventListener("load", () => {
   addClassToScheduleFilter();
   addMenuTogglerHandler();
+  addAnimationLogic();
 });
 
 window.addEventListener("scroll", () => {
