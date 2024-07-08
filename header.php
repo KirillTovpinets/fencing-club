@@ -20,10 +20,10 @@
     <div class="d-flex justify-content-end align-items-center" id="navbarSupportedContent">
       <div class="d-flex align-items-center gap-3 me-3">
         <a href="<?php echo get_option('facebook-group-link'); ?>">
-          <i class="bi bi-facebook"></i>
+          <i class="bi bi-facebook fs-3"></i>
         </a>
         <a href="<?php echo get_option('instagram-group-link'); ?>">
-          <i class="bi bi-instagram"></i>
+          <i class="bi bi-instagram fs-3"></i>
         </a>
       </div>
       <button class="navbar-toggler border-0" id="menu-toggler" type="button">
