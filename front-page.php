@@ -10,8 +10,7 @@
     <div class="container">
       <div class="row px-5">
         <div class="col-md-4 my-md-0 my-4 animate">
-          <a href="<?php echo get_page_link(128); ?>">
-            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="<?php echo get_page_link(128); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg id="Medal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 336" class="fencing-svg">
                 <g>
                   <g>
@@ -29,14 +28,12 @@
               <h2 class="text-center fs-1 my-5 fw-bold">Dedicated Professionals</h2>
               <div class="d-flex gap-2 align-items-center">
                 <span class="bi bi-arrow-right-circle accent"></span>
-                <a href="<?php echo get_page_link(128); ?>" class="text-uppercase fw-bold">Read more</a>
+                <span class="text-uppercase fw-bold">Read more</span>
               </div>
-            </div>
-          </a>
+</a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-1s">
-          <a href="<?php echo get_page_link(426); ?>">
-            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="<?php echo get_page_link(426); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg id="Layer_2" class="fencing-svg swords" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 225">
                 <g id="Final">
                   <g>
@@ -60,14 +57,12 @@
               <h2 class="text-center fs-1 my-5 fw-bold">Individual Coaching</h2>
               <div class="d-flex gap-2 align-items-center">
                 <span class="bi bi-arrow-right-circle accent"></span>
-                <a href="<?php echo get_page_link(426); ?>" class="text-uppercase fw-bold">Read more</a>
+                <span class="text-uppercase fw-bold">Read more</span>
               </div>
-            </div>
-          </a>
+</a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
-          <a href="<?php echo get_page_link(427); ?>">
-            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="<?php echo get_page_link(427); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
                 <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
                 <path class="bug-path" d="M209.89,400.22c16.16,0,39.07-9.78,43.83-18.2,6.9-12.19,4.91-26.71-12.32-54.33" style="fill:none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
@@ -87,10 +82,9 @@
               <h2 class="text-center my-5 fs-1 fw-bold">Open Fencing Bouts</h2>
               <div class="d-flex gap-2 align-items-center">
                 <span class="bi bi-arrow-right-circle accent"></span>
-                <a href="<?php echo get_page_link(427); ?>" class="text-uppercase fw-bold">Read more</a>
+                <span class="text-uppercase fw-bold">Read more</span>
               </div>
-            </div>
-          </a>
+</a>
         </div>
       </div>
     </div>
