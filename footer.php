@@ -4,9 +4,6 @@
       <div class="col-lg-4 col-md-6 border-end animate">
         <div class="d-flex flex-column align-items-center justify-content-center">
           <img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white.png" alt="logo">
-        <p class="text-center">
-          We bring the years, global experience, and stamina to guide our clients through new and often disruptive realities.
-        </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 border-end animate animate__delay-1s">
@@ -34,7 +31,7 @@
       <div class="col-lg-4 col-md-6 container animate animate__delay-2s">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
-          <?php echo get_option('club-address'); ?><br>
+          <?php echo get_option('club-address'); ?> <i class="bi bi-copy"></i><br>
           Tel. <a href="tel:+13127188617"><?php echo get_option('club-phone'); ?></a> <br>
           Email: <a href="mailto:eminencefa@gmail.com"><?php echo get_option('club-email'); ?></a>
         </p>
