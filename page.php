@@ -1,5 +1,6 @@
 <?php
 /* Template Name: Inner Page */
+/* Template Post Type: post */
 ?>
 <?php get_header(); ?>
 
