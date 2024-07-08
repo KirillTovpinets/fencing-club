@@ -135,18 +135,18 @@
         <?php $programs = getPrograms(); ?>
         <?php if ( !empty($programs) ): ?>
           <?php while ( $programs->have_posts() ) : $programs->the_post(); ?>
-          <div class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
+          <a href="<?php echo get_page_link(get_the_ID()); ?>" class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
             <div class="rounded rounded-4 overflow-hidden position-relative">
               <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive.png' ?>" alt="" class="height-auto d-block w-100">
               <div class="program-description title">
                 <h4 class="text-uppercase fw-bold text-center"><?php the_title(); ?></h4>
                 <span class="d-flex read-more gap-2">
                   <i class="bi bi-arrow-right-circle"></i>
-                  <a href="<?php echo get_page_link(get_the_ID()); ?>" class="text-uppercase fw-bold">Read more</a>
+                  <span class="text-uppercase fw-bold">Read more</span>
                 </span>
               </div>
             </div>
-          </div>
+        </a>
           <?php endwhile; ?>
         <?php else: ?>
           <p>No programs found</p>
