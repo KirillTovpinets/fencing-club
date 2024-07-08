@@ -10,81 +10,87 @@
     <div class="container">
       <div class="row px-5">
         <div class="col-md-4 my-md-0 my-4 animate">
-          <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
-            <svg id="Medal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 336" class="fencing-svg">
-              <g>
+          <a href="<?php echo get_page_link(128); ?>">
+            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+              <svg id="Medal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 336" class="fencing-svg">
                 <g>
-                  <polyline points="132.66 110.4 184.16 1.94 138.01 2.13 102.66 77.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                  <polyline points="71.66 110.4 20.16 2.13 66.32 2.32 117.66 110.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                  <line x1="152.66" y1="47.4" x2="129.66" y2="94.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                  <g>
+                    <polyline points="132.66 110.4 184.16 1.94 138.01 2.13 102.66 77.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    <polyline points="71.66 110.4 20.16 2.13 66.32 2.32 117.66 110.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    <line x1="152.66" y1="47.4" x2="129.66" y2="94.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                  </g>
+                  <polyline points="147.66 145.4 147.66 110.4 56.66 110.4 56.66 144.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                  <circle cx="101.83" cy="234" r="99.5" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                  <circle cx="102.33" cy="234.5" r="76.5" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                  <path d="M161.66,210.91c-6-14.72-24.76-32.4-42.89-37.03" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 3px;"/>
                 </g>
-                <polyline points="147.66 145.4 147.66 110.4 56.66 110.4 56.66 144.4" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                <circle cx="101.83" cy="234" r="99.5" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-                <circle cx="102.33" cy="234.5" r="76.5" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-                <path d="M161.66,210.91c-6-14.72-24.76-32.4-42.89-37.03" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              </g>
-              <polygon points="101.83 195.44 110.55 222.29 138.78 222.29 115.95 238.88 124.67 265.72 101.83 249.13 79 265.72 87.72 238.88 64.88 222.29 93.11 222.29 101.83 195.44" style="fill: #f8f6e2; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-            </svg>
-            <h2 class="text-center fs-1 my-5 fw-bold">Dedicated Professionals</h2>
-            <div class="d-flex gap-2 align-items-center">
-              <span class="bi bi-arrow-right-circle accent"></span>
-              <a href="<?php echo get_page_link(128); ?>" class="text-uppercase fw-bold">Read more</a>
+                <polygon points="101.83 195.44 110.55 222.29 138.78 222.29 115.95 238.88 124.67 265.72 101.83 249.13 79 265.72 87.72 238.88 64.88 222.29 93.11 222.29 101.83 195.44" style="fill: #f8f6e2; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+              </svg>
+              <h2 class="text-center fs-1 my-5 fw-bold">Dedicated Professionals</h2>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="bi bi-arrow-right-circle accent"></span>
+                <a href="<?php echo get_page_link(128); ?>" class="text-uppercase fw-bold">Read more</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-1s">
-          <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
-            <svg id="Layer_2" class="fencing-svg swords" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 225">
-              <g id="Final">
-                <g>
+          <a href="<?php echo get_page_link(426); ?>">
+            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+              <svg id="Layer_2" class="fencing-svg swords" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 225">
+                <g id="Final">
                   <g>
-                    <line x1="8.32" y1="6.27" x2="165.74" y2="161.61" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                    <path d="M204.92,156.39c2.06,9.31-34.25,45.7-43.85,43.85-6-1.16-8.3-14.54-6.42-19.25,3.93-9.83,19.92-26.4,29.87-30.02,4.96-1.81,19.04-.71,20.4,5.42Z" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                    <rect x="195.22" y="177.5" width="14.44" height="43.31" transform="translate(486.4 196.83) rotate(135)" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    <g>
+                      <line x1="8.32" y1="6.27" x2="165.74" y2="161.61" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                      <path d="M204.92,156.39c2.06,9.31-34.25,45.7-43.85,43.85-6-1.16-8.3-14.54-6.42-19.25,3.93-9.83,19.92-26.4,29.87-30.02,4.96-1.81,19.04-.71,20.4,5.42Z" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                      <rect x="195.22" y="177.5" width="14.44" height="43.31" transform="translate(486.4 196.83) rotate(135)" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    </g>
+                    <path d="M205.87,156.47c10.52,1.28,19.7,7.61,24.12,16.9,5.42,11.39,3.18,22.39,0,25.57" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
                   </g>
-                  <path d="M205.87,156.47c10.52,1.28,19.7,7.61,24.12,16.9,5.42,11.39,3.18,22.39,0,25.57" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                </g>
-                <g>
                   <g>
-                    <line x1="224.65" y1="5.23" x2="69.31" y2="162.66" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                    <path d="M74.52,201.84c-9.31,2.06-45.7-34.25-43.85-43.85,1.16-6,14.54-8.3,19.25-6.42,9.83,3.93,26.4,19.92,30.02,29.87,1.81,4.96.71,19.04-5.42,20.4Z" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                    <rect x="24.55" y="177.7" width="14.44" height="43.31" transform="translate(-86.73 362.78) rotate(-135)" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    <g>
+                      <line x1="224.65" y1="5.23" x2="69.31" y2="162.66" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                      <path d="M74.52,201.84c-9.31,2.06-45.7-34.25-43.85-43.85,1.16-6,14.54-8.3,19.25-6.42,9.83,3.93,26.4,19.92,30.02,29.87,1.81,4.96.71,19.04-5.42,20.4Z" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                      <rect x="24.55" y="177.7" width="14.44" height="43.31" transform="translate(-86.73 362.78) rotate(-135)" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                    </g>
+                    <path d="M30.13,156.47c-10.52,1.28-19.7,7.61-24.12,16.9-5.42,11.39-3.18,22.39,0,25.57" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
                   </g>
-                  <path d="M30.13,156.47c-10.52,1.28-19.7,7.61-24.12,16.9-5.42,11.39-3.18,22.39,0,25.57" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
                 </g>
-              </g>
-            </svg>
-            <h2 class="text-center fs-1 my-5 fw-bold">Individual Coaching</h2>
-            <div class="d-flex gap-2 align-items-center">
-              <span class="bi bi-arrow-right-circle accent"></span>
-              <a href="<?php echo get_page_link(426); ?>" class="text-uppercase fw-bold">Read more</a>
+              </svg>
+              <h2 class="text-center fs-1 my-5 fw-bold">Individual Coaching</h2>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="bi bi-arrow-right-circle accent"></span>
+                <a href="<?php echo get_page_link(426); ?>" class="text-uppercase fw-bold">Read more</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
-          <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
-            <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
-              <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <path class="bug-path" d="M209.89,400.22c16.16,0,39.07-9.78,43.83-18.2,6.9-12.19,4.91-26.71-12.32-54.33" style="fill:none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-              <g>
-                <line x1="128.1" y1="55.47" x2="126.91" y2="292.38" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-                <line x1="161.78" y1="55.47" x2="161.78" y2="292.96" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
-              </g>
-              <line x1="84.71" y1="276.04" x2="201.48" y2="276.04" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <line x1="65.06" y1="235.62" x2="223.38" y2="235.62" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <line x1="54.4" y1="195.73" x2="234.04" y2="195.2" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <line x1="48.99" y1="155.51" x2="239.45" y2="155.51" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <line x1="61.69" y1="75.06" x2="226.74" y2="75.06" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <line x1="49.91" y1="115.28" x2="238.53" y2="115.28" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <path id="Ext" d="M144.21,4C54.31,4,21.13,52.27,21.73,125.27c.99,119.67,45.85,217.2,122.48,217.8,62.28.49,122.78-94.71,121.87-209.96-.6-76.62-27.75-129.11-121.87-129.11" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-              <path id="Int" d="M48.64,134.99c.77,93.75,35.96,177.98,95.99,178.45,48.79.38,96.14-82.03,95.43-172.31-.47-60.03-21.7-106.14-95.43-106.14s-96.46,42.81-95.99,100Z" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
-            </svg>
-            <h2 class="text-center my-5 fs-1 fw-bold">Open Fencing Bouts</h2>
-            <div class="d-flex gap-2 align-items-center">
-              <span class="bi bi-arrow-right-circle accent"></span>
-              <a href="<?php echo get_page_link(427); ?>" class="text-uppercase fw-bold">Read more</a>
+          <a href="<?php echo get_page_link(427); ?>">
+            <div class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+              <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
+                <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <path class="bug-path" d="M209.89,400.22c16.16,0,39.07-9.78,43.83-18.2,6.9-12.19,4.91-26.71-12.32-54.33" style="fill:none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                <g>
+                  <line x1="128.1" y1="55.47" x2="126.91" y2="292.38" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                  <line x1="161.78" y1="55.47" x2="161.78" y2="292.96" style="fill: none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+                </g>
+                <line x1="84.71" y1="276.04" x2="201.48" y2="276.04" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <line x1="65.06" y1="235.62" x2="223.38" y2="235.62" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <line x1="54.4" y1="195.73" x2="234.04" y2="195.2" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <line x1="48.99" y1="155.51" x2="239.45" y2="155.51" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <line x1="61.69" y1="75.06" x2="226.74" y2="75.06" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <line x1="49.91" y1="115.28" x2="238.53" y2="115.28" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <path id="Ext" d="M144.21,4C54.31,4,21.13,52.27,21.73,125.27c.99,119.67,45.85,217.2,122.48,217.8,62.28.49,122.78-94.71,121.87-209.96-.6-76.62-27.75-129.11-121.87-129.11" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+                <path id="Int" d="M48.64,134.99c.77,93.75,35.96,177.98,95.99,178.45,48.79.38,96.14-82.03,95.43-172.31-.47-60.03-21.7-106.14-95.43-106.14s-96.46,42.81-95.99,100Z" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
+              </svg>
+              <h2 class="text-center my-5 fs-1 fw-bold">Open Fencing Bouts</h2>
+              <div class="d-flex gap-2 align-items-center">
+                <span class="bi bi-arrow-right-circle accent"></span>
+                <a href="<?php echo get_page_link(427); ?>" class="text-uppercase fw-bold">Read more</a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
