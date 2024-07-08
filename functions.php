@@ -84,7 +84,8 @@ function getAllEvents($dayId, $eventId){
   
   global $wpdb;
   $timeFormat = '%h:%i %p';
-  $idFilter = empty($eventId) ? '' : 'AND wp_posts.ID = ' . $eventId . ' OR wp_posts.ID = 427';
+  $openFencingBoutsFilter = $eventId !== 418 ? ' OR wp_posts.ID = 427' : '';
+  $idFilter = empty($eventId) ? '' : 'AND wp_posts.ID = ' . $eventId . $openFencingBoutsFilter;
   $query = $wpdb->get_results("SELECT TIME_FORMAT(wp_mp_timetable_data.event_start, '" . $timeFormat . "') as event_start,
                                       TIME_FORMAT(wp_mp_timetable_data.event_end, '" . $timeFormat ."') as event_end,
                                       wp_mp_timetable_data.description,
