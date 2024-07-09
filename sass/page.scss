@@ -23,10 +23,6 @@ $size: 80px;
     &-content {
       color: $body-bg-color;
 
-      a {
-        color: var(--bs-body);
-      }
-
       .contact-form {
         textarea.form-control {
           height: 200px;

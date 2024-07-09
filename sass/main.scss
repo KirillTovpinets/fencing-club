@@ -68,14 +68,25 @@ body {
 }
 
 a {
-  color: $primary-color;
-
+  &.fencing-program,
   &.fencing-service {
-    text-decoration: none;
+    color: $primary-color !important;
   }
+  color: $accent-color;
+  text-decoration: none !important;
 
   &:not(.fencing-program):not(.fencing-service):hover {
-    color: $accent-color;
+    color: $borders-color;
+  }
+}
+
+.navbar,
+footer {
+  a:not(.fencing-contact-link) {
+    color: $primary-color;
+    &:hover {
+      color: $accent-color !important;
+    }
   }
 }
 .fencing {
@@ -434,7 +445,7 @@ a {
 footer {
   padding: 100px 0px;
   h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   div[class^="col-lg-"] {
@@ -445,6 +456,7 @@ footer {
     padding: 0;
     li {
       a {
+        font-size: 1.2rem;
         color: $primary-color;
         text-decoration: none;
       }

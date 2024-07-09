@@ -21,7 +21,12 @@
           <div class="col-lg-4">
           <i class="bi bi-geo-alt fs-3"></i>
           <h5 class="mb-4">Location</h5>
-          <p>28457 Ballard Dr, <br /> unit c1, Lake Forest</p>
+          <p><?php echo get_option('club-address'); ?></p>
+          <p>
+            <a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="text-decoration-none">
+              <i class="bi bi-geo-alt"></i> Get Direction
+            </a>
+          </p>
           </div>
             <div class="col-lg-4">
           <i class="bi bi-clock fs-3"></i>

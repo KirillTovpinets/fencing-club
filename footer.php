@@ -3,7 +3,7 @@
     <div class="row border p-5 rounded rounded-5 fencing-border">
       <div class="col-lg-4 col-md-6 border-end animate">
         <div class="d-flex flex-column align-items-center justify-content-center">
-          <img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white.png" alt="logo">
+          <img class="mb-4" height="250" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white copy.png" alt="logo">
         </div>
       </div>
       <div class="col-lg-4 col-md-6 border-end animate animate__delay-1s">
@@ -31,15 +31,16 @@
       <div class="col-lg-4 col-md-6 container animate animate__delay-2s">
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
-          <?php echo get_option('club-address'); ?> <i class="bi bi-copy"></i><br>
-          Tel. <a href="tel:+13127188617"><?php echo get_option('club-phone'); ?></a> <br>
-          Email: <a href="mailto:eminencefa@gmail.com"><?php echo get_option('club-email'); ?></a>
+          <?php echo get_option('club-address'); ?><br>
+          <a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br>
+          Tel. <a href="tel:+13127188617" class="fencing-contact-link"><?php echo get_option('club-phone'); ?></a> <br>
+          Email: <a href="mailto:eminencefa@gmail.com" class="fencing-contact-link"><?php echo get_option('club-email'); ?></a>
         </p>
         <div class="d-flex gap-3 align-items-center fs-2">
-          <a href="<?php echo get_option('facebook-group-link'); ?>">
+          <a href="<?php echo get_option('facebook-group-link'); ?>" target="_blank">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="<?php echo get_option('instagram-group-link'); ?>">
+          <a href="<?php echo get_option('instagram-group-link'); ?>" target="_blank">
             <i class="bi bi-instagram"></i>
           </a>
         </div>

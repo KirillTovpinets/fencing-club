@@ -18,9 +18,6 @@
 .fencing-page-content {
   color: #121212;
 }
-.fencing-page-content a {
-  color: var(--bs-body);
-}
 .fencing-page-content .contact-form textarea.form-control {
   height: 200px;
 }
@@ -264,13 +261,23 @@ body .nav-pills {
 }
 
 a {
-  color: #f8f6e2;
+  color: #db6015;
+  text-decoration: none !important;
 }
-a.fencing-service {
-  text-decoration: none;
+a.fencing-program, a.fencing-service {
+  color: #f8f6e2 !important;
 }
 a:not(.fencing-program):not(.fencing-service):hover {
-  color: #db6015;
+  color: #666755;
+}
+
+.navbar a:not(.fencing-contact-link),
+footer a:not(.fencing-contact-link) {
+  color: #f8f6e2;
+}
+.navbar a:not(.fencing-contact-link):hover,
+footer a:not(.fencing-contact-link):hover {
+  color: #db6015 !important;
 }
 
 .fencing-menu {
@@ -598,7 +605,7 @@ footer {
   padding: 100px 0px;
 }
 footer h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 footer div[class^=col-lg-] {
   --bs-gutter-x: 4rem;
@@ -608,6 +615,7 @@ footer ul {
   padding: 0;
 }
 footer ul li a {
+  font-size: 1.2rem;
   color: #f8f6e2;
   text-decoration: none;
 }

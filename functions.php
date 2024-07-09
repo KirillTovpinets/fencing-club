@@ -20,7 +20,12 @@
   add_action( 'admin_menu', 'add_address_link_field_to_general_admin_page' );
   add_action( 'admin_menu', 'add_phone_link_field_to_general_admin_page' );
   add_action( 'admin_menu', 'add_email_link_field_to_general_admin_page' );
+  add_action( 'admin_menu', 'add_direction_link_field_to_general_admin_page' );
 
+ function add_direction_link_field_to_general_admin_page() {
+  $option = 'club-direction-link';
+    register_option_function($option, 'Club Direction Link');
+ }
   function add_address_link_field_to_general_admin_page(){
     $option = 'club-address';
     register_option_function($option, 'Club Address');
