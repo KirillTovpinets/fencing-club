@@ -176,10 +176,36 @@ function addAnimationLogic() {
   });
 }
 
+function iOS() {
+  if (navigator.userAgentData) {
+    navigator.userAgentData.getHighEntropyValues(["platform"]).then((ua) => {
+      if (
+        ua.platform === "iOS" ||
+        ua.platform === "iPadOS" ||
+        ua.platform === "MacIntel" ||
+        ua.platform === "macOS"
+      ) {
+        const googleData = document.querySelectorAll(".google-data");
+        if (googleData) {
+          googleData.forEach((e) => e.remove());
+        }
+      } else {
+        const appleData = document.querySelectorAll(".imap-data");
+        if (appleData) {
+          appleData.forEach((e) => e.remove());
+        }
+      }
+    });
+  } else {
+    console.log("User-Agent Client Hints not supported");
+  }
+}
+
 window.addEventListener("load", () => {
   addClassToScheduleFilter();
   addMenuTogglerHandler();
   addAnimationLogic();
+  iOS();
 });
 
 window.addEventListener("scroll", () => {

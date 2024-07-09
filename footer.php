@@ -32,7 +32,8 @@
         <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
         <p>
           <?php echo get_option('club-address'); ?><br>
-          <a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br>
+          <span class="google-data"><a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></span>
+          <span class="imap-data"><a href="<?php echo get_option('club-direction-link-imap'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></span>
           Tel. <a href="tel:+13127188617" class="fencing-contact-link"><?php echo get_option('club-phone'); ?></a> <br>
           Email: <a href="mailto:eminencefa@gmail.com" class="fencing-contact-link"><?php echo get_option('club-email'); ?></a>
         </p>

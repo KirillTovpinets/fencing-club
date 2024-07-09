@@ -234,6 +234,8 @@
                 <span class="text-uppercase">Location</span>
               </div>
               <p>28457 Ballard Dr, <br> unit c1, <br> Lake Forest, IL 60045</p>
+              <p class="google-data"><a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></p>
+              <p class="imap-data"><a href="<?php echo get_option('club-direction-link-imap'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></p>
             </div>
             <div class="col-4">
               <div class="d-flex gap-2 mb-3">
