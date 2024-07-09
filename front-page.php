@@ -62,7 +62,7 @@
 </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
-            <a href="<?php echo get_page_link(427); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="#programs" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
                 <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
                 <path class="bug-path" d="M209.89,400.22c16.16,0,39.07-9.78,43.83-18.2,6.9-12.19,4.91-26.71-12.32-54.33" style="fill:none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
@@ -79,7 +79,7 @@
                 <path id="Ext" d="M144.21,4C54.31,4,21.13,52.27,21.73,125.27c.99,119.67,45.85,217.2,122.48,217.8,62.28.49,122.78-94.71,121.87-209.96-.6-76.62-27.75-129.11-121.87-129.11" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
                 <path id="Int" d="M48.64,134.99c.77,93.75,35.96,177.98,95.99,178.45,48.79.38,96.14-82.03,95.43-172.31-.47-60.03-21.7-106.14-95.43-106.14s-96.46,42.81-95.99,100Z" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
               </svg>
-              <h2 class="text-center my-5 fs-1 fw-bold">Open Fencing Bouts</h2>
+              <h2 class="text-center my-5 fs-1 fw-bold">Programs <br>for All Ages</h2>
               <div class="d-flex gap-2 align-items-center">
                 <span class="bi bi-arrow-right-circle accent"></span>
                 <span class="text-uppercase fw-bold">Read more</span>
@@ -96,9 +96,9 @@
           <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
         <div class="col-md-6 animate">
-          <h3 class="text-capitalize fencing-section-title fw-bold">Fencing <span class="accent">Programs</span> <br> for all ages and abilities</h3>
+          <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
           <p class="fencing-section-description">
-            From kids' classes to adult training sessions, we have programs tailored for every age group and skill level.
+            Our experienced coaches provide personalized training to help you improve your technique, strategy, and fitness.
           </p>
           <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About Club</a>
         </div>
@@ -109,9 +109,9 @@
     <div class="container">
       <div class="row align-items-center flex-md-row flex-column-reverse">
         <div class="col-md-6 mb-md-0 mb-5 animate">
-          <h3 class="text-capitalize fencing-section-title fw-bold">Contact and <br>non-contact <br><span class="accent">Training</span> </h3>
+          <h3 class="text-capitalize fencing-section-title fw-bold">Safe <span class="accent">Environment</span> </h3>
           <p class="fencing-section-description">
-            Our focus is on dynamic functional training and proper fencing technique.
+          We prioritize the safety and well-being of our students. Our club adheres to strict safety protocols, ensuring a secure and supportive atmosphere for all members.
           </p>
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
@@ -124,7 +124,7 @@
   <section>
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider">
   </section>
-  <section class="fencing-section py-5 bg-primary">
+  <section class="fencing-section py-5 bg-primary" id="programs">
     <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
       PROGRAMS
     </h2>
@@ -160,7 +160,7 @@
   <section>
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider mirror">
   </section>
-  <section class="fencing-section fencing-section-parallax-background">
+  <!-- <section class="fencing-section fencing-section-parallax-background">
     <div class="pt-5 animate">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
         <div class="fs-2 text-center w-50">
@@ -170,7 +170,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="fencing-section schedule-contact-section">
     <div class="container">
       <div class="row">
