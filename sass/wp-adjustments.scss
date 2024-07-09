@@ -50,6 +50,27 @@
 }
 
 .wp-block-button {
+  &__link {
+    transition: all 0.3s ease;
+  }
+  &.is-style {
+    &-outline {
+      .wp-block-button__link {
+        &:hover {
+          background-color: $primary-color !important;
+        }
+      }
+    }
+    &-fill {
+      .wp-block-button__link {
+        &:hover {
+          background-color: $primary-color !important;
+          color: $accent-color !important;
+          border: 2px solid $accent-color !important;
+        }
+      }
+    }
+  }
   @media screen and (max-width: 769px) {
     & {
       flex-grow: 1;

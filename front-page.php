@@ -125,7 +125,6 @@
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider">
   </section>
   <section class="fencing-section py-5 bg-primary">
-    <span class="fs-2 d-block text-center fw-bold text-white animate">FUN. FITNESS. FENCING</span>
     <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
       PROGRAMS
     </h2>

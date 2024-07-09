@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 3,
   "settings": {
     "border": {
       "color": true,
@@ -8,11 +8,17 @@
       "width": true
     },
     "styles": {
+      "color": {
+        "text": "var(--wp--preset--color--primary)"
+      },
       "elements": {
-        "button": {
+        "link": {
           ":hover": {
             "typography": {
               "textDecoration": "none"
+            },
+            "background": {
+              "color": "#000000"
             },
             "border": {
               "bottom": {
@@ -118,6 +124,24 @@
           "size": "7.5rem"
         }
       ]
+    },
+    "blocks": {
+      "core/group": {
+        "color": {
+          "palette": [
+            {
+              "slug": "black",
+              "color": "#000000",
+              "name": "Black"
+            },
+            {
+              "slug": "white",
+              "color": "#ffffff",
+              "name": "White"
+            }
+          ]
+        }
+      }
     }
   }
 }

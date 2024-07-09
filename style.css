@@ -169,6 +169,17 @@
   z-index: 3;
 }
 
+.wp-block-button__link {
+  transition: all 0.3s ease;
+}
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: #f8f6e2 !important;
+}
+.wp-block-button.is-style-fill .wp-block-button__link:hover {
+  background-color: #f8f6e2 !important;
+  color: #db6015 !important;
+  border: 2px solid #db6015 !important;
+}
 @media screen and (max-width: 769px) {
   .wp-block-button {
     flex-grow: 1;
@@ -253,10 +264,12 @@ body .nav-pills {
 }
 
 a {
-  text-decoration: none !important;
   color: #f8f6e2;
 }
-a:hover {
+a.fencing-service {
+  text-decoration: none;
+}
+a:not(.fencing-program):not(.fencing-service):hover {
   color: #db6015;
 }
 

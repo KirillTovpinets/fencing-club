@@ -68,10 +68,13 @@ body {
 }
 
 a {
-  text-decoration: none !important;
   color: $primary-color;
 
-  &:hover {
+  &.fencing-service {
+    text-decoration: none;
+  }
+
+  &:not(.fencing-program):not(.fencing-service):hover {
     color: $accent-color;
   }
 }
