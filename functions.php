@@ -5,7 +5,7 @@
 
   wp_enqueue_script(
     'main',
-    get_template_directory_uri() . '/js/main.js',
+    get_template_directory_uri() . '/js/main-1.js',
     array(),
       '1.0.0',
     array(
