@@ -2,7 +2,14 @@
 <html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<link rel="canonical" href="<?php echo get_permalink(); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Eminence Fencing Academy offers fencing classes for all ages and abilities. Join us to learn the art of fencing with expert instructors.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Eminence Fencing Academy - fencing in Chicago">
+<meta property="og:description" content="Join our fencing classes for all ages and abilities. Expert instructors and a welcoming environment.">
+<meta property="og:image" content="https://eminencefa.com/wp-content/uploads/2024/07/logo-black.png">
+<meta property="og:url" content="https://www.eminencefa.com">
 <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
