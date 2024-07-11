@@ -32,6 +32,15 @@ body {
     backdrop-filter: blur(20px);
     background: rgba($color: #000000, $alpha: 0.5);
   }
+
+  .custom-logo-link {
+    img {
+      @media screen and (max-width: 576px) {
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
 }
 
 .eminence-title {
@@ -39,11 +48,18 @@ body {
   letter-spacing: 3pt;
   font-size: 1.4rem;
   line-height: 23px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 1rem;
+  }
 }
 .eminence-subtitle {
   font-family: Roboto;
   letter-spacing: 3pt;
   font-size: 0.7rem;
+  @media screen and (max-width: 576px) {
+    font-size: 0.3rem;
+  }
 }
 
 .z-4 {
@@ -461,6 +477,11 @@ footer {
     font-size: 1.5rem;
   }
 
+  .custom-logo-link {
+    img {
+      margin-left: -25px;
+    }
+  }
   div[class^="col-lg-"] {
     --bs-gutter-x: 4rem;
   }

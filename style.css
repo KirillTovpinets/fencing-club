@@ -228,6 +228,12 @@ body .nav-pills {
   backdrop-filter: blur(20px);
   background: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 576px) {
+  .navbar .custom-logo-link img {
+    height: 50px;
+    width: auto;
+  }
+}
 
 .eminence-title {
   font-family: Reesha;
@@ -235,11 +241,21 @@ body .nav-pills {
   font-size: 1.4rem;
   line-height: 23px;
 }
+@media screen and (max-width: 576px) {
+  .eminence-title {
+    font-size: 1rem;
+  }
+}
 
 .eminence-subtitle {
   font-family: Roboto;
   letter-spacing: 3pt;
   font-size: 0.7rem;
+}
+@media screen and (max-width: 576px) {
+  .eminence-subtitle {
+    font-size: 0.3rem;
+  }
 }
 
 .z-4 {
@@ -620,6 +636,9 @@ footer {
 }
 footer h4 {
   font-size: 1.5rem;
+}
+footer .custom-logo-link img {
+  margin-left: -25px;
 }
 footer div[class^=col-lg-] {
   --bs-gutter-x: 4rem;
