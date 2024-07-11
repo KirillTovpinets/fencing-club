@@ -104,8 +104,8 @@ a {
   color: $accent-color;
   text-decoration: none !important;
 
-  &:not(.fencing-program):not(.fencing-service):hover {
-    color: $borders-color;
+  &:not(.fencing-program):not(.fencing-service):not(.btn):hover {
+    color: $primary-color;
   }
 }
 

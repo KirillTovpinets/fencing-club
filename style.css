@@ -300,8 +300,8 @@ a {
 a.fencing-program, a.fencing-service {
   color: #f8f6e2 !important;
 }
-a:not(.fencing-program):not(.fencing-service):hover {
-  color: #666755;
+a:not(.fencing-program):not(.fencing-service):not(.btn):hover {
+  color: #f8f6e2;
 }
 
 .navbar a:not(.fencing-contact-link),
