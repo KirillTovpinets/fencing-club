@@ -173,6 +173,11 @@ footer {
       margin-bottom: 3px;
       font-size: 13px;
     }
+    a {
+      :hover {
+        color: $borders-color !important;
+      }
+    }
   }
   &-svg {
     width: 110px;
