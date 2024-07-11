@@ -221,11 +221,25 @@ body .nav-pills {
 
 .navbar {
   --bs-navbar-color: #f8f6e2;
+  --bs-navbar-brand-color: #fff;
   transition: all 0.3s ease;
 }
 .navbar.fencing-navbar {
   backdrop-filter: blur(20px);
   background: rgba(0, 0, 0, 0.5);
+}
+
+.eminence-title {
+  font-family: Reesha;
+  letter-spacing: 3pt;
+  font-size: 1.4rem;
+  line-height: 23px;
+}
+
+.eminence-subtitle {
+  font-family: Roboto;
+  letter-spacing: 3pt;
+  font-size: 0.7rem;
 }
 
 .z-4 {
@@ -615,7 +629,7 @@ footer ul {
   padding: 0;
 }
 footer ul li a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #f8f6e2;
   text-decoration: none;
 }

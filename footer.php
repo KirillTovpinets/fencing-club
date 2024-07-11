@@ -2,9 +2,15 @@
   <div class="container">
     <div class="row border p-5 rounded rounded-5 fencing-border">
       <div class="col-lg-4 col-md-6 border-end animate">
-        <div class="d-flex flex-column align-items-center justify-content-center">
-          <img class="mb-4" height="250" src="<?php echo get_template_directory_uri(); ?>/images/logos/logo white copy.png" alt="logo">
-        </div>
+        <?php if ( function_exists( 'the_custom_logo' ) ): ?>
+          <div class="d-flex flex-column align-items-center">
+            <?php the_custom_logo(); ?>
+              <div class="mt-3 d-flex flex-column align-items-center">
+              <span class="text-primary text-uppercase text-white eminence-title"><?php echo get_bloginfo('name'); ?></span>
+              <span class="text-primary text-uppercase text-white eminence-subtitle">Fencing academy</span>
+              </div>
+            </div>
+          <?php endif ?>
       </div>
       <div class="col-lg-4 col-md-6 border-end animate animate__delay-1s">
         <h4 class="text-uppercase fw-bold mb-4">Club</h4>

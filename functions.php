@@ -23,6 +23,19 @@
   add_action( 'admin_menu', 'add_direction_link_field_to_general_admin_page' );
   add_action( 'admin_menu', 'add_direction_link_imap_field_to_general_admin_page' );
 
+  function themename_custom_logo_setup() {
+    $defaults = array(
+      'height'               => 100,
+      'width'                => 100,
+      'flex-height'          => true,
+      'flex-width'           => true,
+      'header-text'          => array( 'site-title', 'site-description' ),
+      'unlink-homepage-logo' => true, 
+    );
+    add_theme_support( 'custom-logo', $defaults );
+  }
+  add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
  function add_direction_link_field_to_general_admin_page() {
   $option = 'club-direction-link';
     register_option_function($option, 'Club Direction Link');
