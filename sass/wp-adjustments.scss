@@ -53,20 +53,19 @@
   &__link {
     transition: all 0.3s ease;
   }
+  .wp-block-button__link {
+    border: 2px solid $accent-color !important;
+    &:hover {
+      background-color: $primary-color !important;
+      color: $accent-color !important;
+    }
+  }
   &.is-style {
     &-outline {
       .wp-block-button__link {
         &:hover {
-          background-color: $primary-color !important;
-        }
-      }
-    }
-    &-fill {
-      .wp-block-button__link {
-        &:hover {
-          background-color: $primary-color !important;
-          color: $accent-color !important;
-          border: 2px solid $accent-color !important;
+          background-color: $accent-color !important;
+          color: $primary-color !important;
         }
       }
     }

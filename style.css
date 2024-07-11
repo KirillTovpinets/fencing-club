@@ -169,13 +169,16 @@
 .wp-block-button__link {
   transition: all 0.3s ease;
 }
-.wp-block-button.is-style-outline .wp-block-button__link:hover {
-  background-color: #f8f6e2 !important;
+.wp-block-button .wp-block-button__link {
+  border: 2px solid #db6015 !important;
 }
-.wp-block-button.is-style-fill .wp-block-button__link:hover {
+.wp-block-button .wp-block-button__link:hover {
   background-color: #f8f6e2 !important;
   color: #db6015 !important;
-  border: 2px solid #db6015 !important;
+}
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: #db6015 !important;
+  color: #f8f6e2 !important;
 }
 @media screen and (max-width: 769px) {
   .wp-block-button {
