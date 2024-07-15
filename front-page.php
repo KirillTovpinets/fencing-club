@@ -30,7 +30,7 @@
                 <span class="bi bi-arrow-right-circle accent"></span>
                 <span class="text-uppercase fw-bold">Read more</span>
               </div>
-</a>
+            </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-1s">
             <a href="<?php echo get_page_link(426); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
@@ -59,7 +59,7 @@
                 <span class="bi bi-arrow-right-circle accent"></span>
                 <span class="text-uppercase fw-bold">Read more</span>
               </div>
-</a>
+            </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
             <a href="#programs" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
@@ -84,11 +84,11 @@
                 <span class="bi bi-arrow-right-circle accent"></span>
                 <span class="text-uppercase fw-bold">Read more</span>
               </div>
-</a>
+            </a>
         </div>
       </div>
     </div>
-  </setction>
+  </section>
   <section class="fencing-section">
     <div class="container">
       <div class="row align-items-center animate">
@@ -105,7 +105,7 @@
       </div>
     </div>
   </section>
-  <section class="fencing-section my-md-0 mt-5 padding-bottom">
+  <section class="fencing-section my-md-0 mt-5">
     <div class="container">
       <div class="row align-items-center flex-md-row flex-column-reverse">
         <div class="col-md-6 mb-md-0 mb-5 animate">
@@ -117,6 +117,22 @@
         </div>
         <div class="col-md-6 animate animate__delay-1s">
           <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fencing-section padding-bottom">
+    <div class="container">
+      <div class="row align-items-center animate">
+        <div class="col-md-6">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+        </div>
+        <div class="col-md-6 animate">
+          <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
+          <p class="fencing-section-description">
+          If you’re new to fencing, join our Introduction to Fencing session for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety, and sportsmanship.
+          </p>
+          <a href="<?php echo get_page_link(684); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Learn more</a>
         </div>
       </div>
     </div>
@@ -264,4 +280,22 @@
   <section class="fencing-section">
     <div id="google-map"></div>
   </section>
+  <!-- Start Square Appointments Embed code -->
+<a target="_top" style="
+background-color: #fc6600;
+border: none;
+color: white;
+height: 40px;
+text-transform: uppercase;
+font-family: 'Square Market', sans-serif;
+letter-spacing: 1px;
+line-height: 38px;
+padding: 0 28px;
+border-radius: 32px;
+font-weight: 500;
+font-size: 14px;
+cursor: pointer;
+display: inline-block;
+" href="https://squareup.com/appointments/book/lx1rd00lu1t3ab/L2SVB72KDGW1P/start" rel="nofollow">Book Now</a>
+<!-- End Square Appointments Embed code -->
 <?php get_footer(); ?>
