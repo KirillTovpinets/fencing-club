@@ -189,6 +189,32 @@
   }
 }
 
+.modal-dialog {
+  --bs-heading-color: #121212;
+  --bs-modal-color: #121212;
+}
+.modal-dialog .modal-body {
+  padding: 0;
+}
+.modal-dialog .countdown-timer {
+  display: flex;
+  gap: 10px;
+}
+.modal-dialog .countdown-timer .time {
+  flex-grow: 1;
+  flex-basis: 0;
+  color: #f8f6e2;
+  background: #db6015;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.modal-dialog .countdown-timer .time-item {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 576px) {
   html .fencing-programs-title {
     font-size: 3.5rem !important;

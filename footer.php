@@ -57,6 +57,34 @@
     </div>
   </div>
 </footer>
+<div class="modal fade" id="comming-soon-dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/party-3.png" class="img-fluid" alt="Comming soon">
+        <!-- <h4 class="text-center"><strong>We’re Opening Soon!</strong></h4>
+        <p>Eminence Fencing Academy is excited to announce our grand opening! We are dedicated to offering top-notch fencing instruction for all ages and skill levels.</p>
+        <div class="countdown-timer">
+          <div class="time rounded-4">
+            <span class="time-item" id="days">00</span> <span class="title">Days</span>
+          </div>
+          <div class="time rounded-4">
+            <span class="time-item" id="hours">00</span> <span class="title">Hours</span>
+          </div>
+          <div class="time rounded-4">
+            <span class="time-item" id="minutes">00</span> <span class="title">Minutes</span>
+          </div>
+          <div class="time rounded-4">
+            <span class="time-item" id="seconds">00</span> <span class="title">Seconds</span>
+          </div>
+        </div> -->
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn fencing-btn rounded-pill">Awesome!</button>
+      </div>
+    </div>
+  </div>
+</div>
 <?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
