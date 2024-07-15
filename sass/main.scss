@@ -365,7 +365,7 @@ footer {
       padding-bottom: 100px;
       padding-top: 180px;
       z-index: -1;
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         top: 0;

@@ -572,7 +572,7 @@ footer a:not(.fencing-contact-link):hover {
   padding-top: 180px;
   z-index: -1;
 }
-.fencing-section-parallax-background::after {
+.fencing-section-parallax-background::before {
   content: "";
   position: absolute;
   top: 0;

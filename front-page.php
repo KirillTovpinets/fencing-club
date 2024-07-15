@@ -176,6 +176,19 @@
   <section>
     <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider mirror">
   </section>
+  <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/backgrounds/1.png');">
+    <div class="pt-5 animate">
+      <h2 class="text-center mb-5 text-uppercase fw-bold fencing-programs-title text-white animate animate__delay-1s">
+        Birthday Parties
+      </h2>
+      <div class="container">
+      <p class="fs-3 animate">
+      Celebrate your birthday with exciting fencing fun at Eminence Fencing Club! Perfect for all ages, our parties include engaging activities, professional instruction, and all equipment provided. <br>
+      Contact us at <a href="tel:+13127188617">312-718-8617</a> for more information and to book your party.
+      </p>
+      </div>
+    </div>
+  </section>
   <!-- <section class="fencing-section fencing-section-parallax-background">
     <div class="pt-5 animate">
       <div class="fencing-section-testimonials d-flex aling-items-center justify-content-center">
