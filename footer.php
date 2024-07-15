@@ -60,28 +60,23 @@
 <div class="modal fade" id="comming-soon-dialog" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body text-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/party-3.png" class="img-fluid" alt="Comming soon">
-        <!-- <h4 class="text-center"><strong>We’re Opening Soon!</strong></h4>
-        <p>Eminence Fencing Academy is excited to announce our grand opening! We are dedicated to offering top-notch fencing instruction for all ages and skill levels.</p>
-        <div class="countdown-timer">
-          <div class="time rounded-4">
-            <span class="time-item" id="days">00</span> <span class="title">Days</span>
-          </div>
-          <div class="time rounded-4">
-            <span class="time-item" id="hours">00</span> <span class="title">Hours</span>
-          </div>
-          <div class="time rounded-4">
-            <span class="time-item" id="minutes">00</span> <span class="title">Minutes</span>
-          </div>
-          <div class="time rounded-4">
-            <span class="time-item" id="seconds">00</span> <span class="title">Seconds</span>
-          </div>
-        </div> -->
+      <div class="modal-body d-flex flex-column p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/cut1.png');">
+        <div class="content w-50 text-center pt-3">
+          <span class="d-block fst-italic mb-1">Please join us for the</span>
+          <span class="d-block brand-font fs-1 lh-1">GRAND</span>
+          <span class="d-block brand-font fs-1">OPENING</span>
+          <span class="d-flex fst-italic align-items-center gap-2"><hr class="devider"><span class="text-nowrap"> August 17, 2024 </span><hr class="devider"></span>
+        </div>
       </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn fencing-btn rounded-pill">Awesome!</button>
+      <div class="modal-footer justify-content-center" style="background-color: #333">
+        <button type="button" id="close-dialog" class="btn text-white btn-outline-danger rounded-pill" id=" ">Awesome!</button>
       </div>
+      <!-- <div class="modal-body">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/open-soon.png" alt="Coming Soon">
+        <div class="modal-footer justify-content-end" style="background-color: #333333c7">
+          <button type="button" class="btn btn-outline-warning rounded-pill">Awesome!</button>
+        </div>
+      </div> -->
     </div>
   </div>
 </div>

@@ -192,9 +192,18 @@
 .modal-dialog {
   --bs-heading-color: #121212;
   --bs-modal-color: #121212;
+  --bs-modal-width: 500px;
 }
 .modal-dialog .modal-body {
   padding: 0;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
+}
+.modal-dialog .modal-body .devider {
+  width: 50px;
 }
 .modal-dialog .countdown-timer {
   display: flex;
@@ -246,6 +255,10 @@ body {
 body .nav-pills {
   --bs-nav-pills-link-active-bg: #db6015;
   --bs-nav-link-hover-color: #db6015;
+}
+
+.brand-font {
+  font-family: Reesha;
 }
 
 .navbar {

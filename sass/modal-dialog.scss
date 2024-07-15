@@ -2,9 +2,19 @@
 .modal-dialog {
   --bs-heading-color: #{$body-bg-color};
   --bs-modal-color: #{$body-bg-color};
+  --bs-modal-width: 500px;
 
   .modal-body {
     padding: 0;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+
+    .devider {
+      width: 50px;
+    }
   }
 
   .countdown-timer {
