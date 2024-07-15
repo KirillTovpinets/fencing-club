@@ -280,22 +280,4 @@
   <section class="fencing-section">
     <div id="google-map"></div>
   </section>
-  <!-- Start Square Appointments Embed code -->
-<a target="_top" style="
-background-color: #fc6600;
-border: none;
-color: white;
-height: 40px;
-text-transform: uppercase;
-font-family: 'Square Market', sans-serif;
-letter-spacing: 1px;
-line-height: 38px;
-padding: 0 28px;
-border-radius: 32px;
-font-weight: 500;
-font-size: 14px;
-cursor: pointer;
-display: inline-block;
-" href="https://squareup.com/appointments/book/lx1rd00lu1t3ab/L2SVB72KDGW1P/start" rel="nofollow">Book Now</a>
-<!-- End Square Appointments Embed code -->
 <?php get_footer(); ?>
