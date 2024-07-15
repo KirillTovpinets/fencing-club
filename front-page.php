@@ -6,7 +6,7 @@
     </h1>
     <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill animate__animated animate__fadeIn animate__delay-1s">Get started today</a>
   </header>
-  <section class="fencing-section">
+  <section class="fencing-section mt-5">
     <div class="container">
       <div class="row px-5">
         <div class="col-md-4 my-md-0 my-4 animate">
@@ -89,7 +89,7 @@
       </div>
     </div>
   </section>
-  <section class="fencing-section">
+  <section class="fencing-section mt-5">
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
