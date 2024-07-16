@@ -50,7 +50,7 @@
 
   &.has-white-background-color {
     a {
-      &:not(.has-primary-color) {
+      &:not(.has-primary-color):not(.has-accent-color) {
         &:hover {
           color: $body-bg-color !important;
         }
