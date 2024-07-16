@@ -168,7 +168,7 @@
 .wp-block-columns.has-background {
   z-index: 3;
 }
-.wp-block-columns.has-white-background-color a:hover {
+.wp-block-columns.has-white-background-color a:not(.has-primary-color):hover {
   color: #121212 !important;
 }
 
