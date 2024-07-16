@@ -47,6 +47,12 @@
   &.has-background {
     z-index: 3;
   }
+
+  &.has-white-background-color {
+    a:hover {
+      color: $body-bg-color !important;
+    }
+  }
 }
 
 .wp-block-button {
