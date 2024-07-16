@@ -5,9 +5,9 @@
 
   wp_enqueue_script(
     'main',
-    get_template_directory_uri() . '/js/main-3.js',
+    get_template_directory_uri() . '/js/main.js',
     array(),
-      '1.0.0',
+      '1.0.4',
     array(
       'strategy'  => 'defer',
     )

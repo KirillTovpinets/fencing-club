@@ -210,8 +210,15 @@ function setCountDownTimer() {
   myModal.toggle();
 
   document.getElementById("close-dialog").addEventListener("click", () => {
-    sessionStorage.isEnvitationShown = true;
     myModal.hide();
+  });
+
+  const modal = document.getElementById("comming-soon-dialog");
+  modal.addEventListener("hidden.bs.modal", (e) => {
+    if (e.target === modal) {
+      sessionStorage.isEnvitationShown = true;
+      myModal.hide();
+    }
   });
 }
 
