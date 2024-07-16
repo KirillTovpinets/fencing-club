@@ -261,6 +261,10 @@ body .nav-pills {
   font-family: Reesha;
 }
 
+.btn-close {
+  --bs-btn-close-color: #f8f6e2;
+}
+
 .navbar {
   --bs-navbar-color: #f8f6e2;
   --bs-navbar-brand-color: #fff;
@@ -564,7 +568,7 @@ footer a:not(.fencing-contact-link):hover {
   z-index: 1;
 }
 .fencing-section-parallax-background {
-  background: url("images/backgrounds/parallax.png");
+  background: url("images/backgrounds/parallax-min.png");
   margin-top: -116px;
   background-size: cover;
   background-position: center;

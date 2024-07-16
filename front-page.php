@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/backgrounds/header.png')">
+<header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/backgrounds/header-min.png')">
     <h1 class="text-center fencing-header-title">
       <span class="d-block fs-5 academy animate__animated animate__fadeIn">FENCING ACADEMY</span>
       <span class="d-block text-uppercase animate__animated animate__fadeIn animate__delay-1s"><?php echo get_the_title(); ?></span>
@@ -93,14 +93,14 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
           <p class="fencing-section-description">
-            Our experienced coaches provide personalized training to help you improve your technique, strategy, and fitness.
+            Our experienced coaches provide personalized training to help you improve your technique, strategy and fitness.
           </p>
-          <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About Club</a>
+          <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About us</a>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
         <div class="col-md-6 animate animate__delay-1s">
-          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
       </div>
     </div>
@@ -125,12 +125,12 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
           <p class="fencing-section-description">
-          If you’re new to fencing, join our Introduction to Fencing session for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety, and sportsmanship.
+          If you’re new to fencing, join our Introduction to Fencing session for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety and sportsmanship.
           </p>
           <a href="<?php echo get_page_link(684); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Learn more</a>
         </div>
@@ -138,7 +138,7 @@
     </div>
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider">
   </section>
   <section class="fencing-section py-5 bg-primary" id="programs">
     <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
@@ -152,7 +152,7 @@
           <?php while ( $programs->have_posts() ) : $programs->the_post(); ?>
           <a href="<?php echo get_page_link(get_the_ID()); ?>" class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
             <div class="rounded rounded-4 overflow-hidden position-relative">
-              <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive.png' ?>" alt="" class="height-auto d-block w-100">
+              <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive-min.png' ?>" alt="" class="height-auto d-block w-100">
               <div class="program-description title">
                 <h4 class="text-uppercase fw-bold text-center"><?php the_title(); ?></h4>
                 <span class="d-flex read-more gap-2">
@@ -174,16 +174,16 @@
 
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider.png" class="fencing-devider mirror">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider mirror">
   </section>
-  <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/backgrounds/1.png');">
+  <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/backgrounds/1-min.png');">
     <div class="pt-5 animate">
       <h2 class="text-center mb-5 text-uppercase fw-bold fencing-programs-title text-white animate animate__delay-1s">
         Birthday Parties
       </h2>
       <div class="container">
       <p class="fs-3 animate">
-      Celebrate your birthday with exciting fencing fun at Eminence Fencing Club! Perfect for all ages, our parties include engaging activities, professional instruction, and all equipment provided. <br>
+      Celebrate your birthday with exciting fencing fun at Eminence Fencing Club! Perfect for all ages, our parties include engaging activities, professional instruction and all equipment provided. <br>
       Contact us at <a href="tel:+13127188617">312-718-8617</a> for more information and to book your party.
       </p>
       </div>

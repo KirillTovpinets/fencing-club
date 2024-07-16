@@ -28,6 +28,9 @@ body {
 .brand-font {
   font-family: Reesha;
 }
+.btn-close {
+  --bs-btn-close-color: #{$primary-color};
+}
 .navbar {
   --bs-navbar-color: #{$primary-color};
   --bs-navbar-brand-color: #fff;
@@ -358,7 +361,7 @@ footer {
     }
 
     &-parallax-background {
-      background: url("images/backgrounds/parallax.png");
+      background: url("images/backgrounds/parallax-min.png");
       margin-top: -116px;
       background-size: cover;
       background-position: center;

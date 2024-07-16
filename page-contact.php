@@ -3,11 +3,11 @@
 ?>
 <?php get_header(); ?>
 
-<header class="fencing-header fencing-page-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : (bloginfo('template_url') . "/images/backgrounds/1.png"); ?>')">
+<header class="fencing-header fencing-page-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : (bloginfo('template_url') . "/images/backgrounds/1-min.png"); ?>')">
     <h1 class="text-center fencing-header-title animate">
       <span class="d-block"><?php echo get_the_title(); ?></span>
     </h1>
-    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider.png" alt="">
+    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="">
 </header>
 <main class="fencing-page-content">
     <?php echo the_content(); ?>
@@ -16,7 +16,10 @@
     <section class="fencing-section">
       <div class="fencing-contact-info animate animate__delay-1s">
         <h2 class="header text-uppercase">Contact Us</h2>
-        <p class="description">Eminence Fencing Academy prides itself on being one of the best venues at which to host a fencing event.</p>
+        <p class="description">
+        Eminence Fencing Academy is proud to be one of the best fencing competition venues in Chicago
+        northern suburbs
+        </p>
         <div class="row mt-3">
           <div class="col-lg-4">
           <i class="bi bi-geo-alt fs-3"></i>
