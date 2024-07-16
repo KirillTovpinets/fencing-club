@@ -46,6 +46,10 @@ $size: 80px;
         top: calc(50% - 260px);
         left: calc(50% - 646px);
 
+        a:hover {
+          color: $body-bg-color !important;
+        }
+
         @media screen and (max-width: 991px) {
           display: none;
         }

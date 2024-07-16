@@ -13,6 +13,7 @@
     )
     );
 
+  wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
   wp_enqueue_style('reesha-font', get_template_directory_uri() . '/fonts/reesha/MyWebfontsKit.css', array(), false, 'all');
 
   add_action( 'admin_menu', 'add_instagram_link_field_to_general_admin_page' );
