@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
 <?php wp_head(); ?>
 </head>
-<body>
+<body class="bg-black">
   <nav class="navbar navbar-transparent fixed-top">
   <div class="container-fluid">
     <?php if ( function_exists( 'the_custom_logo' ) ): ?>
