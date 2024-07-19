@@ -256,7 +256,6 @@ body {
   --bs-body-color: #f8f6e2;
   --bs-dark-rgb: 18, 18, 18;
   --animate-delay: 0.5s;
-  background: #000;
 }
 body .nav-pills {
   --bs-nav-pills-link-active-bg: #db6015;
