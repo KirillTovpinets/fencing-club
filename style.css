@@ -512,6 +512,7 @@ footer a:not(.fencing-contact-link):hover {
 .fencing-section {
   position: relative;
   z-index: 3;
+  background: #000;
 }
 .fencing-section.padding-bottom {
   padding-bottom: 200px;
@@ -687,6 +688,7 @@ footer a:not(.fencing-contact-link):hover {
 
 footer {
   padding: 100px 0px;
+  background: #000;
 }
 footer h4 {
   font-size: 1.5rem;
