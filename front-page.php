@@ -98,7 +98,7 @@
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
           <p class="fencing-section-description">
-            Our experienced coaches provide personalized training to help you improve your technique, strategy and fitness.
+            Our experienced coaches provide personalized fencing classes to help you improve your technique, strategy and fitness.
           </p>
           <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About us</a>
         </div>
@@ -111,7 +111,7 @@
         <div class="col-md-6 mb-md-0 mb-5 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Safe <span class="accent">Environment</span> </h3>
           <p class="fencing-section-description">
-          We prioritize the safety and well-being of our students. Our club adheres to strict safety protocols, ensuring a secure and supportive atmosphere for all members.
+          We prioritize the safety and well-being of our students on each fencing class. Our club adheres to strict safety protocols, ensuring a secure and supportive atmosphere for all members.
           </p>
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
@@ -130,7 +130,7 @@
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
           <p class="fencing-section-description">
-          If you’re new to fencing, join our Introduction to Fencing session for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety and sportsmanship.
+          If you’re new to fencing, join our Introduction to Fencing classes for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety and sportsmanship.
           </p>
           <a href="<?php echo get_page_link(684); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Learn more</a>
         </div>

@@ -60,13 +60,7 @@
 <div class="modal fade" id="comming-soon-dialog" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body d-flex justify-content-between p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/cut1-min.png');">
-        <div class="content w-50 text-center pt-3">
-          <span class="d-block fst-italic mb-1">Please join us for the</span>
-          <span class="d-block brand-font fs-1 lh-1">GRAND</span>
-          <span class="d-block brand-font fs-1">OPENING</span>
-          <span class="d-flex fst-italic align-items-center gap-2"><hr class="devider"><span class="text-nowrap"> August 17, 2024 </span><hr class="devider"></span>
-        </div>
+      <div class="modal-body d-flex justify-content-end p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/grand opening.png');">
         <!-- close button -->
         <button type="button" class="btn-close text-white btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
