@@ -545,6 +545,9 @@ footer a:not(.fencing-contact-link):hover {
 .fencing-section .contact-form .form-control:focus ~ label:after {
   background: none;
 }
+.fencing-section.has-bg-primary-background-color .form-control, .fencing-section.has-bg-primary-background-color .form-control + label {
+  color: #121212;
+}
 .fencing-section .accordion-item {
   --bs-accordion-active-bg: #666755;
   --bs-accordion-active-color: #f8f6e2;

@@ -324,6 +324,14 @@ footer {
         }
       }
     }
+    &.has-bg-primary-background-color {
+      .form-control {
+        &,
+        & + label {
+          color: $body-bg-color;
+        }
+      }
+    }
 
     .accordion-item {
       --bs-accordion-active-bg: #{$borders-color};
