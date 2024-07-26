@@ -44,10 +44,10 @@
           Email: <a href="mailto:eminencefa@gmail.com" class="fencing-contact-link"><?php echo get_option('club-email'); ?></a>
         </p>
         <div class="d-flex gap-3 align-items-center fs-2">
-          <a href="<?php echo get_option('facebook-group-link'); ?>" target="_blank">
+          <a href="<?php echo get_option('facebook-group-link'); ?>" target="_blank" aria-label="Link to eminece Facebook group">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="<?php echo get_option('instagram-group-link'); ?>" target="_blank">
+          <a href="<?php echo get_option('instagram-group-link'); ?>" target="_blank" aria-label="Link to eminece Instagram group">
             <i class="bi bi-instagram"></i>
           </a>
         </div>
@@ -57,7 +57,7 @@
     </div>
   </div>
 </footer>
-<div class="modal fade" id="comming-soon-dialog" tabindex="-1">
+<div class="modal fade" id="comming-soon-dialog" tabindex="-1" aria-modal="true" role="dialog" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body d-flex justify-content-end p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/grand opening-min.png');">
@@ -67,12 +67,6 @@
       <div class="modal-footer justify-content-center" style="background-color: #333">
         <button type="button" id="close-dialog" class="btn text-white btn-outline-danger rounded-pill" id=" ">Awesome!</button>
       </div>
-      <!-- <div class="modal-body">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/open-soon.png" alt="Coming Soon">
-        <div class="modal-footer justify-content-end" style="background-color: #333333c7">
-          <button type="button" class="btn btn-outline-warning rounded-pill">Awesome!</button>
-        </div>
-      </div> -->
     </div>
   </div>
 </div>

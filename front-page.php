@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row px-5">
         <div class="col-md-4 my-md-0 my-4 animate">
-            <a href="<?php echo get_page_link(128); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="<?php echo get_page_link(128); ?>" aria-label="Read more about our dedicated professionals" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg id="Medal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 336" class="fencing-svg">
                 <g>
                   <g>
@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-1s">
-            <a href="<?php echo get_page_link(426); ?>" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="<?php echo get_page_link(426); ?>" aria-label="Read more about our private lessons" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg id="Layer_2" class="fencing-svg swords" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 225">
                 <g id="Final">
                   <g>
@@ -62,7 +62,7 @@
             </a>
         </div>
         <div class="col-md-4 my-md-0 my-4 animate animate__delay-2s">
-            <a href="#programs" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
+            <a href="#programs" aria-label="Go to our programs' section" class="bordered d-flex border fencing-border rounded rounded-4 fencing-service align-items-center justify-content-center flex-column">
               <svg class="fencing-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 431">
                 <path d="M54,277.21c-32.17,35.42-61.36,89.67-46.41,115.62,27.59,47.9,245.52,47.96,272.67,0,13.91-24.57-15.26-79.8-48.77-115.92" style="fill: none; stroke: #f8f6e2; stroke-miterlimit: 10; stroke-width: 3px;"/>
                 <path class="bug-path" d="M209.89,400.22c16.16,0,39.07-9.78,43.83-18.2,6.9-12.19,4.91-26.71-12.32-54.33" style="fill:none; stroke: #f8f6e2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
@@ -93,7 +93,7 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="image with eminence fencing academy logo">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
@@ -116,7 +116,7 @@
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
         <div class="col-md-6 animate animate__delay-1s">
-          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="front picture of fencer">
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="">
+          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="picture of two fencers that are fencing">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
@@ -138,7 +138,7 @@
     </div>
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider" alt="section devider image">
   </section>
   <section class="fencing-section py-5 bg-primary" id="programs">
     <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
@@ -152,7 +152,7 @@
           <?php while ( $programs->have_posts() ) : $programs->the_post(); ?>
           <a href="<?php echo get_page_link(get_the_ID()); ?>" class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
             <div class="rounded rounded-4 overflow-hidden position-relative">
-              <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive-min.png' ?>" alt="" class="height-auto d-block w-100">
+              <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive-min.png' ?>" alt="two fencers that are fencing" class="height-auto d-block w-100">
               <div class="program-description title">
                 <h4 class="text-uppercase fw-bold text-center"><?php the_title(); ?></h4>
                 <span class="d-flex read-more gap-2">
@@ -174,7 +174,7 @@
 
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider mirror">
+    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider mirror" alt="section devider image">
   </section>
   <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/backgrounds/1-min.png');">
     <div class="pt-5 animate">

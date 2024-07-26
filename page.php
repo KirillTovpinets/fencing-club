@@ -11,7 +11,7 @@
 </header>
 <main class="fencing-page-content">
   <section class="fencing-section-devider">
-    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="">
+    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="section devider image">
   </section>
     <?php echo the_content(); ?>
 </main>

@@ -10,7 +10,7 @@
     </h1>
 </header>
 <main class="fencing-page-content">
-<img class="fencing-devider" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="">
+<img class="fencing-devider" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="section devider image">
     <?php echo the_content(); ?>
     <section class="fencing-section bg-dark fencing-section-schedule">
       <h4 class="fencing-section-title fw-bold text-primary text-center pt-5 animate">Schedule</h4>

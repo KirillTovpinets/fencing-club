@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="canonical" href="<?php echo get_permalink(); ?>" />
@@ -44,10 +44,10 @@
 
     <div class="d-flex justify-content-end align-items-center" id="navbarSupportedContent">
       <div class="d-flex align-items-center gap-3 me-3">
-        <a href="<?php echo get_option('facebook-group-link'); ?>">
+        <a href="<?php echo get_option('facebook-group-link'); ?>" aria-label="link to eminence facebook group">
           <i class="bi bi-facebook fs-3"></i>
         </a>
-        <a href="<?php echo get_option('instagram-group-link'); ?>">
+        <a href="<?php echo get_option('instagram-group-link'); ?>" aria-label="link to eminence instagram account">
           <i class="bi bi-instagram fs-3"></i>
         </a>
       </div>
@@ -58,7 +58,7 @@
   </div>
 </nav>
 <div class="fencing-menu" id="fencing-main-menu">
-      <button class="navbar-toggler border-0" id="menu-toggler-close" type="button">
+      <button class="navbar-toggler border-0" id="menu-toggler-close" type="button" aria-label="toggler">
         <i class="bi bi-x"></i>
       </button>
   <div class="container">
