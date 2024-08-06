@@ -36,7 +36,7 @@
       <div class="navbar-brand d-flex align-items-center">
       <?php the_custom_logo(); ?>
         <div class="d-flex flex-column ms-3">
-        <span class="text-primary text-uppercase text-white eminence-title"><?php echo get_bloginfo('name'); ?></span>
+        <span class="text-primary text-uppercase text-white eminence-title">Eminence</span>
         <span class="text-primary text-uppercase text-white eminence-subtitle">Fencing academy</span>
         </div>
       </div>
