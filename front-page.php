@@ -4,7 +4,7 @@
       <span class="d-block fs-5 academy animate__animated animate__fadeIn">FENCING ACADEMY</span>
       <span class="d-block text-uppercase animate__animated animate__fadeIn animate__delay-1s"><?php echo get_the_title(); ?></span>
     </h1>
-    <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill animate__animated animate__fadeIn animate__delay-1s">Get started today</a>
+    <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn btn-xlg rounded-pill animate__animated animate__fadeIn animate__delay-1s">Start Fencing Today</a>
   </header>
   <section class="fencing-section mt-5">
     <div class="container">
@@ -98,7 +98,7 @@
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
           <p class="fencing-section-description">
-            Our experienced coaches provide personalized fencing classes to help you improve your technique, strategy and fitness.
+            Our experienced coaches provide personalized foil fencing classes to help you improve your technique, strategy and fitness.
           </p>
           <a href="<?php echo get_page_link(33); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">About us</a>
         </div>
@@ -111,7 +111,7 @@
         <div class="col-md-6 mb-md-0 mb-5 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Safe <span class="accent">Environment</span> </h3>
           <p class="fencing-section-description">
-          We prioritize the safety and well-being of our students on each fencing class. Our club adheres to strict safety protocols, ensuring a secure and supportive atmosphere for all members.
+          We prioritize the safety and well-being of our students on each foil fencing class. Our club adheres to strict safety protocols, ensuring a secure and supportive atmosphere for all members.
           </p>
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
@@ -130,7 +130,7 @@
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
           <p class="fencing-section-description">
-          If you’re new to fencing, join our Introduction to Fencing classes for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety and sportsmanship.
+          If you’re new to foil fencing, join our Introduction to Fencing classes for kids 6+ to learn the fundamentals, including coordination, distance control, basic techniques, using electrical weapons, etiquette, safety and sportsmanship.
           </p>
           <a href="<?php echo get_page_link(684); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Learn more</a>
         </div>
@@ -168,7 +168,7 @@
         <?php endif; wp_reset_postdata(); ?>
       </div>
       <div class="text-center animate">
-        <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Get Started today</a>
+        <a href="<?php echo get_page_link(566); ?>" class="btn fencing-btn rounded-pill btn-xlg text-uppercase">Start Fencing Today</a>
       </div>
     </div>
 
@@ -263,8 +263,8 @@
                 <span class="text-uppercase">Location</span>
               </div>
               <p>28457 Ballard Dr, <br> unit c1, <br> Lake Forest, IL 60045</p>
-              <p class="google-data"><a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></p>
-              <p class="imap-data"><a href="<?php echo get_option('club-direction-link-imap'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Direction</a> <br></p>
+              <p class="google-data"><a href="<?php echo get_option('club-direction-link'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Directions</a> <br></p>
+              <p class="imap-data"><a href="<?php echo get_option('club-direction-link-imap'); ?>" target="_blank" class="fencing-contact-link"> <i class="bi bi-geo-alt"></i> Get Directions</a> <br></p>
             </div>
             <div class="col-4">
               <div class="d-flex gap-2 mb-3">
