@@ -7,7 +7,7 @@
     <h1 class="text-center fencing-header-title animate">
       <span class="d-block"><?php echo get_the_title(); ?></span>
     </h1>
-    <img class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="section devider image">
+    <img loading="lazy" class="fencing-devider mt-5 position-absolute bottom-0 z-3" src="<?php bloginfo('template_url');?>/images/section-devider-min.png" alt="section devider image">
 </header>
 <main class="fencing-page-content">
     <?php echo the_content(); ?>

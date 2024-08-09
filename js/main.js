@@ -93,21 +93,9 @@ function addAnimationLogic() {
 function iOS() {
   if (navigator.userAgentData) {
     navigator.userAgentData.getHighEntropyValues(["platform"]).then((ua) => {
-      if (
-        ua.platform === "iOS" ||
-        ua.platform === "iPadOS" ||
-        ua.platform === "MacIntel" ||
-        ua.platform === "macOS"
-      ) {
-        const googleData = document.querySelectorAll(".google-data");
-        if (googleData) {
-          googleData.forEach((e) => e.remove());
-        }
-      } else {
-        const appleData = document.querySelectorAll(".imap-data");
-        if (appleData) {
-          appleData.forEach((e) => e.remove());
-        }
+      const appleData = document.querySelectorAll(".imap-data");
+      if (appleData) {
+        appleData.forEach((e) => e.remove());
       }
     });
   } else {
@@ -142,6 +130,13 @@ window.addEventListener("load", () => {
   addMenuTogglerHandler();
   addAnimationLogic();
   iOS();
+
+  const images = document.querySelectorAll("img");
+
+  images.forEach((img) => {
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("decoding", "async");
+  });
 });
 
 window.addEventListener("scroll", () => {

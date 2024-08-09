@@ -60,7 +60,7 @@
 <div class="modal fade" id="comming-soon-dialog" tabindex="-1" aria-modal="true" role="dialog" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body d-flex justify-content-end p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/grand opening-min.png');">
+      <div class="modal-body d-flex justify-content-end p-4 text-white" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/grand opening.webp');">
         <!-- close button -->
         <button type="button" class="btn-close text-white btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>

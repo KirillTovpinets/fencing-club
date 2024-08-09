@@ -7,7 +7,7 @@
     'main',
     get_template_directory_uri() . '/js/main.js',
     array(),
-      '1.0.4',
+      '1.0.5',
     array(
       'strategy'  => 'defer',
     )

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/backgrounds/header-min.png')">
+<header class="fencing-header d-flex align-items-center justify-content-center flex-column gap-4" style="background-image: url('<?php echo bloginfo('template_url');?>/images/club-photos/webp/header.webp')">
     <h1 class="text-center fencing-header-title">
       <span class="d-block fs-5 academy animate__animated animate__fadeIn">FENCING ACADEMY</span>
       <span class="d-block text-uppercase animate__animated animate__fadeIn animate__delay-1s">Eminence</span>
@@ -93,7 +93,7 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/photo 2-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="image with eminence fencing academy logo">
+          <img loading="lazy" decode="async" src="<?php bloginfo("template_url"); ?>/images/club-photos/webp/expert-coaching.webp" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="image with eminence fencing academy logo">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Expert <span class="accent">Coaching</span></h3>
@@ -116,7 +116,7 @@
           <a href="<?php echo get_page_link(566); ?>" class="text-uppercase btn btn-outline-light btn-xlg rounded-pill fencing-btn-outline">Get Involved</a>
         </div>
         <div class="col-md-6 animate animate__delay-1s">
-          <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/fencing-technic-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="front picture of fencer">
+          <img loading="lazy" decode="async" src="<?php bloginfo('template_url'); ?>/images/club-photos/webp/safe-environment.webp" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="front picture of fencer">
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@
     <div class="container">
       <div class="row align-items-center animate">
         <div class="col-md-6">
-          <img src="<?php bloginfo("template_url"); ?>/images/backgrounds/4-min.png" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="picture of two fencers that are fencing">
+          <img loading="lazy" decode="async" src="<?php bloginfo("template_url"); ?>/images/club-photos/webp/introduction-to-classes.webp" class="w-100 rounded rounded-pill mb-md-0 mb-5" alt="picture of two fencers that are fencing">
         </div>
         <div class="col-md-6 animate">
           <h3 class="text-capitalize fencing-section-title fw-bold">Introduction <span class="accent">Classes</span></h3>
@@ -138,7 +138,7 @@
     </div>
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider" alt="section devider image">
+    <img loading="lazy" decode="async" src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider" alt="section devider image">
   </section>
   <section class="fencing-section py-5 bg-primary" id="programs">
     <h2 class="text-center fw-bold fencing-programs-title text-white animate animate__delay-1s">
@@ -152,7 +152,7 @@
           <?php while ( $programs->have_posts() ) : $programs->the_post(); ?>
           <a href="<?php echo get_page_link(get_the_ID()); ?>" class="col-md-6 col-lg-3 fencing-program mb-4 mb-lg-0 animate <?php echo 'animate__delay-' . get_post_field('menu_order') .'s' ?>">
             <div class="rounded rounded-4 overflow-hidden position-relative">
-              <img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive-min.png' ?>" alt="two fencers that are fencing" class="height-auto d-block w-100">
+              <img loading="lazy" decode="async" src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : bloginfo('template_url') . '/images/backgrounds/competitive-min.png' ?>" alt="two fencers that are fencing" class="height-auto d-block w-100">
               <div class="program-description title">
                 <h4 class="text-uppercase fw-bold text-center"><?php the_title(); ?></h4>
                 <span class="d-flex read-more gap-2">
@@ -174,15 +174,15 @@
 
   </section>
   <section>
-    <img src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider mirror" alt="section devider image">
+    <img loading="lazy" decode="async" src="<?php bloginfo('template_url'); ?>/images/section-devider-min.png" class="fencing-devider mirror" alt="section devider image">
   </section>
-  <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/backgrounds/1-min.png');">
+  <section class="fencing-section fencing-section-parallax-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/club-photos/webp/birthday-parties.webp');">
     <div class="pt-5 animate">
-      <h2 class="text-center mb-5 text-uppercase fw-bold fencing-programs-title text-white animate animate__delay-1s">
+      <h2 class="text-center mb-5 text-uppercase fw-bold fencing-programs-title text-white">
         Birthday Parties
       </h2>
       <div class="container">
-      <p class="fs-3 animate">
+      <p class="fs-3 animate animate__delay-1s">
       Celebrate your birthday with exciting fencing fun at Eminence Fencing Club! Perfect for all ages, our parties include engaging activities, professional instruction and all equipment provided. <br>
       Contact us at <a href="tel:+13127188617">312-718-8617</a> for more information and to book your party.
       </p>
