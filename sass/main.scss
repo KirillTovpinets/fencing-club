@@ -304,6 +304,13 @@ footer {
       textarea.form-control {
         height: 200px;
       }
+      .form-submit-container {
+        p {
+          display: flex;
+          justify-content: end;
+          flex-direction: row-reverse;
+        }
+      }
       .form-control {
         background: none;
         border: none;
