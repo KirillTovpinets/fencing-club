@@ -103,29 +103,7 @@ function iOS() {
   }
 }
 
-function setCountDownTimer() {
-  if (sessionStorage.isEnvitationShown) return;
-  var myModal = new bootstrap.Modal(
-    document.getElementById("comming-soon-dialog"),
-    { backdrop: true, keyboard: true, focus: true },
-  );
-  myModal.toggle();
-
-  document.getElementById("close-dialog").addEventListener("click", () => {
-    myModal.hide();
-  });
-
-  const modal = document.getElementById("comming-soon-dialog");
-  modal.addEventListener("hidden.bs.modal", (e) => {
-    if (e.target === modal) {
-      sessionStorage.isEnvitationShown = true;
-      myModal.hide();
-    }
-  });
-}
-
 window.addEventListener("load", () => {
-  setCountDownTimer();
   addClassToScheduleFilter();
   addMenuTogglerHandler();
   addAnimationLogic();
