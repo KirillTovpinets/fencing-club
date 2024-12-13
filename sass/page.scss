@@ -108,7 +108,7 @@ $size: 80px;
 
       .chess-order {
         .wp-block-post {
-          &:nth-child(2n + 1) {
+          &:nth-child(2n) {
             .wp-block-columns {
               flex-direction: row-reverse;
             }
