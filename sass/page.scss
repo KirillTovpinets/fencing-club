@@ -19,7 +19,7 @@ $size: 80px;
   &-page {
     &-header {
       height: 80vh;
-      background-position: top;
+      background-position: top !important;
     }
     &-content {
       color: $body-bg-color;
