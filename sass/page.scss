@@ -106,6 +106,15 @@ $size: 80px;
         }
       }
 
+      .chess-order {
+        .wp-block-post {
+          &:nth-child(2n + 1) {
+            .wp-block-columns {
+              flex-direction: row-reverse;
+            }
+          }
+        }
+      }
       .wp-block-columns {
         &.coaching-section {
           @media screen and (max-width: 994px) {
