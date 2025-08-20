@@ -33,7 +33,7 @@
           </div>
             <div class="col-lg-4">
           <i class="bi bi-clock fs-3"></i>
-          <h5 class="mb-4">Hours</h5>
+          <h5 class="mb-4">Hours 234</h5>
           <?php $hours = getWorkingHours(); ?>
               <?php foreach($hours as $day): ?>
                 <p style="font-size: 0.75rem"><?php echo substr($day->work_day, 0, 3) . ".: " . $day->work_start . ' - ' . $day->work_end; ?></p>
